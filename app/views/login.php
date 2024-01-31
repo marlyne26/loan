@@ -191,7 +191,7 @@
             json.Password = $("#Password")[0].value;
 
             var svcdta = new Object();
-            svcdta.Module = "auth";
+            svcdta.Module = "Auth";
             svcdta.Page_key = "Login";
             svcdta.JSON = json;
 
