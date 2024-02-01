@@ -1,0 +1,301 @@
+
+
+31-01-24 04:35:49 : {"JSON":"","Page_key":""}
+
+31-01-24 04:35:49 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","\"\""],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:35:49 : {"JSON":"","Page_key":""}
+
+31-01-24 04:35:49 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","\"\""],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/login"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:35:51 : {"JSON":"","Page_key":""}
+
+31-01-24 04:35:51 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","\"\""],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/assets\/logo.png"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:36:18 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:36:18 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:36:18 : Reached request Login
+
+31-01-24 04:36:18 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:36:24 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:36:24 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:36:24 : Reached request Login
+
+31-01-24 04:36:24 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:37:20 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:37:20 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:37:20 : Reached request Login
+
+31-01-24 04:37:20 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:37:30 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:37:30 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:37:30 : Reached request Login
+
+31-01-24 04:37:30 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:38:57 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:38:57 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:38:57 : Reached request Login
+
+31-01-24 04:38:57 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:39:01 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:39:01 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:39:01 : Reached request Login
+
+31-01-24 04:39:01 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:45:27 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"2022"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:45:27 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"2022\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:45:27 : Reached request Login
+
+31-01-24 04:45:27 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 04:45:36 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"admin"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 04:45:36 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"admin\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 04:45:36 : Reached request Login
+
+31-01-24 04:45:36 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:07:46 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:07:46 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:07:46 : Reached request Login
+
+31-01-24 05:07:46 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:08:15 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:08:15 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:08:15 : Reached request Login
+
+31-01-24 05:08:15 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:08:20 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:08:20 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:08:20 : Reached request Login
+
+31-01-24 05:08:20 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:09:50 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:09:50 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:09:50 : Reached request Login
+
+31-01-24 05:09:50 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:09:52 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:09:52 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:09:52 : Reached request Login
+
+31-01-24 05:09:52 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:10:11 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"321"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:10:11 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"321\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:10:11 : Reached request Login
+
+31-01-24 05:10:11 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:13:41 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"3214"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:13:41 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"3214\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:13:41 : Reached request Login
+
+31-01-24 05:13:41 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:13:48 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"1234"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:13:48 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"1234\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:13:48 : Reached request Login
+
+31-01-24 05:13:48 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:13:56 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:13:56 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:13:56 : Reached request Login
+
+31-01-24 05:13:56 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:15:46 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:15:46 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:15:46 : Reached request Login
+
+31-01-24 05:15:46 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:17:40 : {"JSON":"","Page_key":""}
+
+31-01-24 05:17:40 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","\"\""],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/login"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:17:45 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:17:45 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:17:45 : Reached request Login
+
+31-01-24 05:17:45 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:18:17 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:18:17 : INSERT INTO IPLogging(IPAddress, UserID, DATA, URL) VALUES (:IPAddress,:UserID,:DATA,:URL) 
+ [[":IPAddress","::1"],[":UserID",0],[":DATA","{\"Username\":\"admin\",\"Password\":\"123\"}"],[":URL","http:\/\/localhost\/itplloanprojectweb\/public\/index.php"]] 
+ SQLSTATE[HY000] [1049] Unknown database 'itpl_app'
+
+31-01-24 05:18:17 : Reached request Login
+
+31-01-24 05:18:17 : Unknown error type: [2] Undefined variable $database<br />
+  Fatal error on line 22 in file C:\xampp\htdocs\itplloanprojectweb\app\database\DBController.php
+Aborting...<br />
+
+
+31-01-24 05:18:49 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:18:49 : Reached request Login
+
+31-01-24 05:18:49 : {"JSON":"","Page_key":""}
+
+31-01-24 05:18:50 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"c16a5320fa475530d9583c34fd356ef5"}
+
+31-01-24 05:18:50 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+31-01-24 05:18:50 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist

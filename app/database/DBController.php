@@ -8,8 +8,8 @@ class DBController
 {
 	static $servername = "localhost:3306";
 	// static $username = "root";
-	// static $password = "";
-	// static $database = "tz_clients";
+	// static $password = "123";
+	// static $database = "loan_db";
 	static $conn = false;
 
 	/*
