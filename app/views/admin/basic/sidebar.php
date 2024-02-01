@@ -22,94 +22,6 @@
                     </a>
                 </li>
 
-                <!-- leads -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fad fa-user-check"></i>
-                        <p>
-                            Leads
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="clients-viewleads" class="nav-link">
-                                <i class="fa fa-users nav-icon text-info"></i>
-                                <p>Leads Lists</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products-viewitplleads" class="nav-link">
-                                <i class="fa fa-users nav-icon text-info"></i>
-                                <p>ITPL Leads </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products-requestquotes" class="nav-link">
-                                <i class="fa fa-users nav-icon text-info"></i>
-                                <p>Request Quotes </p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- careers  -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chalkboard-teacher"></i>
-                        <p>
-                            Careers
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="careers-applicantlist" class="nav-link">
-                                <i class="far fa fa-list-alt nav-icon text-info"></i>
-                                <p>Applicant Lists</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="careers-jobposted" class="nav-link">
-                                <i class="far fa fa-upload nav-icon text-info"></i>
-                                <p>Job Posted</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Clients -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fad fa-users"></i>
-                        <p>
-                            Clients
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="clients-viewclient" class="nav-link">
-                                <i class="fa fa-list-alt nav-icon text-info"></i>
-                                <p>Client Lists</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="clients-clientsubscription" class="nav-link">
-                                <i class="fa fa-list-alt nav-icon text-info"></i>
-                                <p>Client Subscription</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="clients-clientreport" class="nav-link">
-                                <i class="fa fa-file nav-icon text-info"></i>
-                                <p>Client Reports</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
                 <!-- Grievances -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -150,7 +62,7 @@
                     <a href="#" class="nav-link">
                         <i class="fas fa-user"></i>
                         <p>
-                            Staff
+                            Users
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -195,12 +107,11 @@
                     </ul>
                 </li>
 
-                <!-- intern -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="fas fa-user"></i>
+                    <i class="fa fa-university" aria-hidden="true"></i>                        
                         <p>
-                            Intern
+                            Manage Loans
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -208,8 +119,8 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="staff-internList" class="nav-link">
-                                <i class="fa fa-users"></i>
-                                <p>List</p>
+                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                <p>View all Loans</p>
                             </a>
                         </li>
                     </ul>
@@ -225,36 +136,16 @@
                                 </p>
                             </a>
 
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="staff-InternAttendance" class="nav-link">
-                                        <i class="fa fa-plus-circle"></i>
-                                        <p>Take Attendance</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="staff-InternAttendanceSetting" class="nav-link">
-                                        <i class="fad fa-cogs"></i>
-                                        <p>Setting</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="staff-InternAttendanceReports" class="nav-link">
-                                        <i class="fa fa-list"></i>
-                                        <p>Report</p>
-                                    </a>
-                                </li>
-                            </ul>
+                        
                         </li>
                     </ul>
                 </li>
-
                 <!-- products -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fad fa-luggage-cart"></i>
+                    <i class="fa fa-folder" aria-hidden="true"></i>
                         <p>
-                            Products
+                            Loan Types
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
