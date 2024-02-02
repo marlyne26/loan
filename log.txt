@@ -5778,3 +5778,44 @@ Aborting...<br />
 
 02-02-24 05:08:38 : Hellop
 >>>>>>> 49046d7ae6798de6fa1244fa6d64deb56b89172a
+
+
+02-02-24 05:11:05 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 05:11:05 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+02-02-24 05:11:05 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+02-02-24 05:11:07 : {"JSON":"","Page_key":""}
+
+02-02-24 05:11:08 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 05:11:08 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+02-02-24 05:11:08 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+02-02-24 05:11:10 : {"JSON":"","Page_key":""}
+
+02-02-24 05:11:11 : Hellop
+
+02-02-24 05:11:16 : {"JSON":"","Page_key":""}
+
+02-02-24 05:11:16 : Hellop
+
+02-02-24 05:11:18 : {"JSON":"","Page_key":""}
+
+02-02-24 05:11:18 : Hellop
+
+02-02-24 05:11:24 : {"JSON":"","Page_key":""}
+
+02-02-24 05:11:24 : Hellop
+
+02-02-24 05:13:36 : {"JSON":"","Page_key":""}
