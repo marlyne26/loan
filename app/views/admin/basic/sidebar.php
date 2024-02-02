@@ -124,6 +124,30 @@
                             </a>
                         </li>
                     </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="loan-viewLoan" class="nav-link">
+                                <i class="fa fa-users"></i>
+                                <p>View Loan Request</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="loan-viewLoan" class="nav-link">
+                                <i class="fa fa-users"></i>
+                                <p>Bank Statement</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="loan-viewLoan" class="nav-link">
+                                <i class="fa fa-users"></i>
+                                <p>History</p>
                     
                     <!-- intern Attendance -->
                     <ul class="nav nav-treeview">
@@ -151,11 +175,7 @@
                         </p>
                     </a>
 
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="loan-viewLoan" class="nav-link">
-                                <i class="fa fa-users"></i>
-                                <p>View all loans</p>
+                    
                             </a>
                         </li>
                     </ul>
