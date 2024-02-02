@@ -18,7 +18,7 @@
                 <li class="nav-item">
                     <a href="dashboard" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>Dashboard 1</p>
+                        <p>Dashboard</p>
                     </a>
                 </li>
 
@@ -118,7 +118,7 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="staff-internList" class="nav-link">
+                        <a href="loan-loan_plans" class="nav-link">
                             <i class="fa fa-folder" aria-hidden="true"></i>
                                 <p>View all Loans</p>
                             </a>
@@ -180,9 +180,6 @@
                         </li>
                     </ul>
                 </li>
-
-=======
->>>>>>> 4d620b6849bb8a42f13aad2c2e1da8d6430a96cf
                 <!-- products -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
