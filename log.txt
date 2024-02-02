@@ -3899,3 +3899,699 @@ Aborting...<br />
  [] 
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
 >>>>>>> 4d620b6849bb8a42f13aad2c2e1da8d6430a96cf
+
+
+02-02-24 11:23:28 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:28 : Hellop
+
+02-02-24 11:23:32 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:32 : Hellop
+
+02-02-24 11:23:33 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:33 : Hellop
+
+02-02-24 11:23:36 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:36 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:36 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 11:23:36 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:36 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 11:23:36 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:36 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 11:23:36 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:36 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 11:23:37 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:37 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 11:23:37 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:37 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 11:23:41 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:41 : Hellop
+
+02-02-24 11:23:46 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:46 : {"Module":"Products","Page_key":"getProducts","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:46 : SELECT  `ProductID`,`Code`,`Name`,`CreatedDateTime`,`Description`,`Website` FROM `Products`  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products' doesn't exist
+
+02-02-24 11:23:51 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:51 : {"Module":"Products","Page_key":"getProductViewLeads","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:51 :  SELECT `LeadsID`,`Name`,`SchoolGroupName`,`ContactNo`,`Email`,`Role`,`IPAddress`,`DeviceInfo` FROM `prayagedu_leads`  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_leads' doesn't exist
+
+02-02-24 11:23:53 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:53 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:53 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:53 : {"Module":"Products","Page_key":"getProductBasedURL","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:53 : SELECT DBBasedSource ,FileSourceURL,Name,products_basedfiles.ProductID FROM `products_basedfiles` INNER JOIN  `products` ON  products_basedfiles.ProductID = products.ProductID;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products_basedfiles' doesn't exist
+
+02-02-24 11:23:53 : {"Module":"Products","Page_key":"getProducts","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:53 : SELECT  `ProductID`,`Code`,`Name`,`CreatedDateTime`,`Description`,`Website` FROM `Products`  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products' doesn't exist
+
+02-02-24 11:23:54 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:54 : {"Module":"Products","Page_key":"getAllProduct","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:54 : SELECT ProductID,Name FROM `products`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products' doesn't exist
+
+02-02-24 11:23:54 : {"Module":"Products","Page_key":"getProductVersion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:54 : SELECT pv.`VersionControlID`, pv.`ProductID`,p.Name, pv.`AndroidVersionCode`, pv.`iOSVersionCode`, pv.`Title`, pv.`Description`, pv.`isForced`, pv.`UpdatedDate` FROM `Products_VersionControl` pv
+            inner join products p on pv.ProductID=p.ProductID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products_versioncontrol' doesn't exist
+
+02-02-24 11:23:55 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:55 : {"Module":"Products","Page_key":"getProducts","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:55 : SELECT  `ProductID`,`Code`,`Name`,`CreatedDateTime`,`Description`,`Website` FROM `Products`  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products' doesn't exist
+
+02-02-24 11:23:55 : {"Module":"Products","Page_key":"getProducts_subscription","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:55 : SELECT ps.`ProductSubscriptionID`, p.`ProductID`,p.`Name`, ps.`SubscriptionName`, ps.`Description`, ps.`MinUsers`, ps.`MaxUsers`,
+            ps.`ProductModuleIDs`,GROUP_CONCAT(ifnull(pm.ProductModuleID,'')) AS ProductModule, 
+            IFNULL( GROUP_CONCAT(pm.ModuleName),'') as Modulename,
+            ps.`isPayPerUser`, ps.`Amount`, ps.`CreatedDateTime`, ps.`CreatedBy`, ps.`ValidityDate`, ps.`isActive`
+            FROM `ProductSubscriptions`as ps 
+            inner join Products as p on ps.ProductID=p.ProductID
+            left JOIN productmodules pm on find_in_set(pm.ProductModuleID,ps.ProductModuleIDs)
+            GROUP BY ps.ProductSubscriptionID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.productsubscriptions' doesn't exist
+
+02-02-24 11:23:55 : {"Module":"Products","Page_key":"getProductModule","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:55 : SELECT `ProductModuleID`,  `ModuleName`FROM `productmodules`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.productmodules' doesn't exist
+
+02-02-24 11:23:57 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:57 : {"Module":"Products","Page_key":"getProducts","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:23:57 : SELECT  `ProductID`,`Code`,`Name`,`CreatedDateTime`,`Description`,`Website` FROM `Products`  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.products' doesn't exist
+
+02-02-24 11:23:59 : {"JSON":"","Page_key":""}
+
+02-02-24 11:23:59 : Hellop
+
+02-02-24 11:25:26 : {"JSON":"","Page_key":""}
+
+02-02-24 11:25:26 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:26 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 11:25:26 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:26 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 11:25:26 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:26 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 11:25:26 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:26 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 11:25:26 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:26 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 11:25:26 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:26 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 11:25:29 : {"JSON":"","Page_key":""}
+
+02-02-24 11:25:29 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:29 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 11:25:29 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:29 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 11:25:29 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:29 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 11:25:29 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:29 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 11:25:29 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:29 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 11:25:29 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 11:25:29 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:26:37 : {"JSON":"","Page_key":""}
+
+02-02-24 12:26:37 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:37 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:26:37 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:37 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:26:37 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:37 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:26:37 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:37 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:26:37 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:37 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:26:37 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:37 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:26:39 : {"JSON":"","Page_key":""}
+
+02-02-24 12:26:39 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:39 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:26:39 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:39 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:26:39 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:39 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:26:39 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:39 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:26:39 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:39 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:26:39 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:39 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:26:45 : {"JSON":"","Page_key":""}
+
+02-02-24 12:26:46 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:46 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:26:46 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:46 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:26:46 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:46 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:26:46 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:46 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:26:46 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:46 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:26:46 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:26:46 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+02-02-24 12:27:23 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:23 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:27:23 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:23 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:27:23 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:23 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:27:23 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:23 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:27:23 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:23 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:27:23 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:23 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:27:25 : {"JSON":"","Page_key":""}
+
+02-02-24 12:27:25 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:25 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:27:25 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:25 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:27:25 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:25 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:27:25 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:25 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:27:25 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:25 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:27:25 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:25 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:27:28 : {"JSON":"","Page_key":""}
+
+02-02-24 12:27:31 : {"JSON":"","Page_key":""}
+
+02-02-24 12:27:31 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:31 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:27:31 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:31 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:27:31 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:31 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:27:31 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:31 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:27:31 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:31 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:27:31 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:27:31 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:28:57 : {"JSON":"","Page_key":""}
+
+02-02-24 12:28:57 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:28:57 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:28:57 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:28:57 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:28:57 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:28:57 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:28:57 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:28:57 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:28:57 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:28:57 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:28:57 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:28:57 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:29:00 : {"JSON":"","Page_key":""}
+
+02-02-24 12:29:05 : {"JSON":"","Page_key":""}
+
+02-02-24 12:29:05 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:29:05 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:29:05 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:29:05 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:29:05 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:29:05 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:29:05 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:29:05 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:29:05 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:29:05 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:29:05 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:29:05 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:40:23 : {"JSON":"","Page_key":""}
+
+02-02-24 12:40:23 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:23 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:40:23 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:23 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:40:23 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:23 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:40:23 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:23 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:40:23 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:23 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:40:23 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:23 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:40:24 : {"JSON":"","Page_key":""}
+
+02-02-24 12:40:24 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:24 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:40:24 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:24 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:40:24 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:24 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:40:24 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:24 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:40:24 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:24 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:40:24 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:24 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:40:29 : {"JSON":"","Page_key":""}
+
+02-02-24 12:40:31 : {"JSON":"","Page_key":""}
+
+02-02-24 12:40:31 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:31 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:40:31 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:31 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:40:31 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:31 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+02-02-24 12:40:31 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:31 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:40:31 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:31 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:40:31 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:40:31 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:56:14 : {"JSON":"","Page_key":""}
+
+02-02-24 12:56:15 : {"Module":"Staff","Page_key":"getInternCategories","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:56:15 : SELECT `InternCategoryID`,`CategoryName` FROM `Intern_Category`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.intern_category' doesn't exist
+
+02-02-24 12:56:15 : {"Module":"Staff","Page_key":"getInternList","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:56:15 : SELECT si.StaffInternID,si.StaffInternName,si.ContactNo,si.DOB,si.EmailID,si.StartDate,si.Address,si.ReligionID,si.CasteCode,si.CommunityID,si.NationalityID,si.Photo,si.RFIDcardNo,sr.Religion,sn.NationalityName FROM `Staff_Intern` as si INNER JOIN settings_religion  sr ON   si.ReligionID = sr.ReligionID
+        INNER JOIN settings_nationality sn ON si.NationalityID = sn.NationalityID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff_intern' doesn't exist
+
+02-02-24 12:56:15 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:56:15 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+02-02-24 12:56:15 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:56:15 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+02-02-24 12:56:15 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:56:15 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+02-02-24 12:56:15 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 12:56:15 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
