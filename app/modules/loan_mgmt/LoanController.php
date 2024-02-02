@@ -22,6 +22,11 @@ class LoanController implements Controller{
                 DBController::logs("Hellop");
                 break;
 
+            case 'loan_plans':
+                load($viewpath . "loan_plans.php");
+                DBController::logs("Hellop");
+                break;
+
             default:
                 // session_destroy();
                 include '404.php';

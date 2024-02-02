@@ -118,7 +118,7 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                        <a href="loan_plans" class="nav-link">
+                        <a href="loan-loan_plans" class="nav-link">
                             <i class="fa fa-folder" aria-hidden="true"></i>
                                 <p>View all Loans</p>
                             </a>
