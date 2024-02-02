@@ -48,34 +48,37 @@ parse_str($_SERVER["QUERY_STRING"], $query_array);
 
 require_once("../vendor/autoload.php");
 
+use app\database\DBController;
+use app\database\MDBController;
+use app\misc\IPLogger;
+use app\misc\MSC;
 use app\modules\academics\AcademicsController;
+use app\modules\administration\AdministrationController;
+use app\modules\administration\PublicAccessController; 
 use app\modules\admission\AdmissionController;
 use app\modules\assessment\AssessmentController;
 use app\modules\attendance\AttendanceController;
+use app\modules\attendance\classes\Attendance;
 use app\modules\auth\AuthenticationController;
-use app\misc\MSC;
-use app\misc\IPLogger;
-use app\database\DBController;
 use app\modules\auth\classes\Password;
 use app\modules\auth\classes\Session;
 use app\modules\elearning\ELearningController;
 use app\modules\examination\classes\ExaminationAllotment;
 use app\modules\examination\ExaminationController;
+use app\modules\fee\FeeController;
 use app\modules\filemanager\FileController;
 use app\modules\grievance\GrievanceController;
-use app\modules\notice\NoticeController;
-use app\modules\settings\SettingController;
-use app\modules\student\StudentController;
-use app\modules\staff\StaffController;
-use app\modules\fee\FeeController;
-use app\modules\payment\PaymentController;
 use app\modules\meeting\MeetingController;
+use app\modules\notice\NoticeController;
 use app\modules\notification\NotificationController;
+use app\modules\payment\PaymentController;
 use app\modules\report\ReportController;
-use app\modules\administration\AdministrationController;
-use app\modules\administration\PublicAccessController; 
-use app\modules\attendance\classes\Attendance;
-use app\database\MDBController;
+use app\modules\settings\SettingController;
+use app\modules\staff\StaffController;
+use app\modules\student\StudentController;
+use app\modules\loan_mgmt\LoanController;;
+use Exception;
+
 
 if (!isset($data["JSON"])) {
     $data["JSON"] = [];
@@ -283,6 +286,10 @@ if (!isset($data["JSON"])) {
 
         case "staff":
             StaffController::Views($page);
+            break;
+
+        case "loan":
+            LoanController::Views($page);
             break;
 
         case "notice":

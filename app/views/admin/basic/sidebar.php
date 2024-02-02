@@ -248,6 +248,25 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Manage Loan -->
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <p>
+                            Manage Loan
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="loan-viewLoan" class="nav-link">
+                                <i class="fa fa-users"></i>
+                                <p>View all loans</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
                 <!-- products -->
                 <li class="nav-item has-treeview">

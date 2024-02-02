@@ -44,21 +44,25 @@ parse_str($_SERVER["QUERY_STRING"], $query_array);
 
 require_once("../vendor/autoload.php");
 
-use app\modules\auth\AuthenticationController;
-use app\misc\MSC;
-use app\misc\IPLogger;
 use app\database\DBController;
+use app\misc\IPLogger;
+use app\misc\MSC;
+use app\modules\auth\AuthenticationController;
 use app\modules\auth\classes\Password;
+use app\modules\careers\CareerController;
 use app\modules\clients\ClientController;
 use app\modules\filemanager\FileController;
-use app\modules\settings\SettingController;
 use app\modules\products\ProductsController;
-use app\modules\supports\SupportController;
-use app\modules\supportTicket\SupportTicketController;
-//newly added
-use app\modules\careers\CareerController;
-use app\modules\supportTicket\classes\SupportTicket;
+use app\modules\settings\SettingController;
 use app\modules\staff\StaffController; //added by dev on 19/01/24
+//newly added
+use app\modules\loan_mgmt\LoanController;
+use app\modules\supports\SupportController;
+use app\modules\supportTicket\classes\SupportTicket;
+use app\modules\supportTicket\SupportTicketController;
+use Exception;
+
+
 
 if (!isset($data["JSON"])) {
     $data["JSON"] = "";
@@ -216,19 +220,16 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
             StaffController::Views($page); //added by dev on 19/01/24
             break;
 
+        case "loan":
+            LoanController::Views($page);
+            break;
+
         case "logout":
             session_destroy();
             header('Location: login');
             ob_end_flush();
             exit;
             break;
-
-
-
-            
-
-
-
 
         default:
             header("Content-type: */*;");
