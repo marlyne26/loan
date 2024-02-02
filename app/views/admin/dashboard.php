@@ -8,10 +8,10 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="info-box">
-                    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-chalkboard-teacher"></i></span>
+                    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-money-bills"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Teachers</span>
+                        <span class="info-box-text">Payment Expected</span>
                         <span class="info-box-number" id="NoOfTeachers"> - </span>
                     </div>
                 </div>
@@ -19,10 +19,10 @@
            
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="info-box mb-3">
-                    <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-child"></i></span>
+                    <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-users"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Student</span>
+                        <span class="info-box-text">Borrowers</span>
                         <span class="info-box-number" id="NoOfStudents"> - </span>
                     </div>
                    
@@ -33,10 +33,10 @@
 
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="info-box mb-3">
-                    <span class="info-box-icon bg-success elevation-1"><i class="fas fa-tablet-android-alt"></i></span>
+                    <span class="info-box-icon bg-success elevation-1"><i class="fas fa-cash-register"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">App Users</span>
+                        <span class="info-box-text">Monthly Payment Expected</span>
                         <span class="info-box-number" id="NoOfAppUsers">-</span>
                     </div>
                   
@@ -44,20 +44,7 @@
                
             </div>
           
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                    <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chalkboard text-white"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Active Notice</span>
-                        <span class="info-box-number" id="NoOfNotices">-</span>
-                    </div>
-                   
-                </div>
-               
-            </div>
-          
-        </div>
+            
 
         <!-- 2nd row -->
         <div class="row">
@@ -66,7 +53,7 @@
                     <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-books"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Courses</span>
+                        <span class="info-box-text">Amount Received this Month</span>
                         <span class="info-box-number" id="NoOfCourses"> -
                         </span>
                     </div>
@@ -77,7 +64,7 @@
                 <div class="info-box mb-3">
                     <span class="info-box-icon bg-warning elevation-1"><i class="fad fa-book-open"></i></span>
                     <div class="info-box-content">
-                        <span class="info-box-text">Courses Accessed</span>
+                        <span class="info-box-text">Payments Today</span>
                         <span class="info-box-number" id="NoOfCoursesJoined"> - </span>
                     </div>
                 </div>
@@ -88,10 +75,10 @@
             <a href="careers-applicantlist" class="col-12 col-sm-6 col-md-3 " style="color:black;">
             <!-- <div class="col-12 col-sm-6 col-md-3"> -->
                 <div class="info-box mb-3">
-                    <span class="info-box-icon bg-secondary elevation-1"><i class="fas fa-pen-alt"></i></span>
+                    <span class="info-box-icon bg-secondary elevation-1"><i class="fab fa-person-circle-question"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Applicants</span>
+                        <span class="info-box-text">Pending Borrowers</span>
                         <span class="info-box-number" id="TotalNoOfApplicants">-</span>
                     </div>
                 </div> 
@@ -103,7 +90,7 @@
                     <span class="info-box-icon bg-info elevation-1"><i class="fas fa-school text-white"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Active Job</span>
+                        <span class="info-box-text"></span>
                         <span class="info-box-number" id="NoOfOpenJob">-</span> 
                     </div>
                 </div> 
@@ -111,64 +98,7 @@
             <!-- </div> -->
             
 
-            <a href="settings-todayVisitList"  class="col-12 col-sm-6 col-md-3" style="color:black;">
-            <!-- <div class="col-12 col-sm-6 col-md-3"> -->
-                <div class="info-box mb-3">
-                    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-school text-white"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Today Visit</span>
-                        <span class="info-box-number" id="VisitInaDay">-</span>
-                    </div>
-                </div>
-            <!-- </div> -->
-            </a>
-
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-school text-white"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">OverAll Visit</span>
-                        <span class="info-box-number" id="TotalVisit">-</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Chart -->
-        <div class="row">
-            <div class="card col-md-12">
-                <div class="card-header ui-sortable-handle" style="cursor: move;">
-                    <h3 class="card-title">
-                        <i class="fas fa-chart-pie mr-1"></i>
-                        Attendance
-
-                    </h3>
-                    <span class="float-right">
-                        <label class="radio-inline mx-3">
-                            <input type="radio" name="optradio" value="1" checked> Yearly
-                        </label>
-                        <label class="radio-inline mx-3">
-                            <input type="radio" name="optradio" value="2"> Monthly
-                        </label>
-                        <label class="radio-inline mx-3">
-                            <input type="radio" name="optradio" value="3"> Class Wise
-                        </label>
-                    </span>
-                </div><!-- /.card-header -->
-                <div class="card-body">
-                    <div class="tab-content p-0">
-                        <!-- Morris chart - Sales -->
-                        <div class="chart tab-pane active" style="position: relative; height: 300px;">
-                            <canvas id="attendancechart" height="450" style="height: 300px; display: block; width: 157px;" width="235" class="chartjs-render-monitor"></canvas>
-                        </div>
-                    </div>
-                </div><!-- /.card-body -->
-            </div>
-        </div>
-    </div>
-
+        
 </div>
 <!-- /.content-wrapper -->
 
