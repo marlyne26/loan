@@ -17,15 +17,22 @@ class LoanController implements Controller{
 
         switch ($page[1]) {
 
-            case 'viewLoan':
+            case "viewLoan":
                 load($viewpath . "viewLoan/viewLoan.php");
-                DBController::logs("Hellop");
                 break;
+            
+            case "loanRequest":
+                load($viewpath . "loanRequest.php");
+                break;
+            // case 'viewLoan':
+            //     load($viewpath . "viewLoan/viewLoan.php");
+            //     DBController::logs("Hellop");
+            //     break;
 
-            case 'loan_plans':
-                load($viewpath . "loan_plans.php");
-                DBController::logs("Hellop");
-                break;
+            // case 'loan_plans':
+            //     load($viewpath . "loan_plans.php");
+            //     DBController::logs("Hellop");
+            //     break;
 
             default:
                 // session_destroy();

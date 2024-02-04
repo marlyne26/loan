@@ -221,7 +221,7 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
             break;
 
         case "loan":
-            LoanController::Views($page);
+            LoanController::Views(($page));
             break;
 
         case "logout":
