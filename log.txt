@@ -5832,7 +5832,76 @@ Aborting...<br />
 02-02-24 05:11:24 : Hellop
 
 02-02-24 05:13:36 : {"JSON":"","Page_key":""}
+<<<<<<< HEAD
+
+02-02-24 05:15:13 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:15 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:18 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 05:15:24 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:24 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:35 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 05:15:35 : Reached request Login
+
+02-02-24 05:15:36 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:36 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"a2ef406e2c2351e0b9e80029c909242d"}
+
+02-02-24 05:15:36 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+02-02-24 05:15:36 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+02-02-24 05:15:40 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:40 : Hellop
+
+02-02-24 05:15:42 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:42 : Hellop
+
+02-02-24 05:15:45 : {"JSON":"","Page_key":""}
+
+02-02-24 05:15:45 : Hellop
+
+02-02-24 05:18:46 : {"JSON":"","Page_key":""}
+
+02-02-24 05:18:46 : Hellop
+
+02-02-24 05:19:05 : {"JSON":"","Page_key":""}
+
+02-02-24 05:19:05 : Hellop
+
+02-02-24 05:19:23 : {"JSON":"","Page_key":""}
+
+02-02-24 05:19:23 : Hellop
+
+02-02-24 05:19:26 : {"JSON":"","Page_key":""}
+
+02-02-24 05:19:26 : Hellop
+
+02-02-24 05:27:26 : {"JSON":"","Page_key":""}
+
+02-02-24 05:27:26 : Hellop
+
+02-02-24 05:27:31 : {"JSON":"","Page_key":""}
+
+02-02-24 05:27:31 : Hellop
+
+02-02-24 05:27:33 : {"JSON":"","Page_key":""}
+
+02-02-24 05:27:33 : Hellop
+=======
 >>>>>>> 1ba511799e044bc614f33f8637c6a680b12531ed
+<<<<<<< HEAD
 
 
 04-02-24 09:38:08 : {"JSON":"","Page_key":""}
@@ -7017,3 +7086,6 @@ Aborting...<br />
 04-02-24 10:25:04 : {"JSON":"","Page_key":""}
 
 04-02-24 10:28:36 : {"JSON":"","Page_key":""}
+=======
+>>>>>>> 604efdee8cf0c2cd11695655277126b4e1b04855
+>>>>>>> ff7773281d3c837b9908a4b3b03f83059df79c28
