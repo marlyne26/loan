@@ -33,7 +33,7 @@ class LoanController implements Controller{
                     load($viewpath . "payments.php");
                     break;    
 
-            case "plans":
+            case "types":
                     load($viewpath . "loanTypes.php");
                     break;    
             
