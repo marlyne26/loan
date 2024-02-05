@@ -145,9 +145,9 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="loan-history" class="nav-link">
                                 <i class="fa fa-users"></i>
-                                <p>History</p>
+                                <p>Payment History</p>
                             </a>
                         </li>
                     </ul>

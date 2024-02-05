@@ -7206,3 +7206,29 @@ Aborting...<br />
 05-02-24 11:05:02 : {"JSON":"","Page_key":""}
 
 05-02-24 11:05:08 : {"JSON":"","Page_key":""}
+
+05-02-24 11:11:56 : {"JSON":"","Page_key":""}
+
+05-02-24 11:12:05 : {"JSON":"","Page_key":""}
+
+05-02-24 11:12:05 : {"JSON":"","Page_key":""}
+
+05-02-24 11:12:11 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 11:12:11 : Reached request Login
+
+05-02-24 11:12:11 : {"JSON":"","Page_key":""}
+
+05-02-24 11:12:12 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 11:12:12 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+05-02-24 11:12:12 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+05-02-24 11:12:16 : {"JSON":"","Page_key":""}
+
+05-02-24 11:12:27 : {"JSON":"","Page_key":""}
