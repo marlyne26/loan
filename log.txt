@@ -7232,3 +7232,458 @@ Aborting...<br />
 05-02-24 11:12:16 : {"JSON":"","Page_key":""}
 
 05-02-24 11:12:27 : {"JSON":"","Page_key":""}
+
+05-02-24 11:17:08 : {"JSON":"","Page_key":""}
+
+05-02-24 11:17:54 : {"JSON":"","Page_key":""}
+
+05-02-24 11:19:04 : {"JSON":"","Page_key":""}
+
+05-02-24 11:19:32 : {"JSON":"","Page_key":""}
+
+05-02-24 11:23:25 : {"JSON":"","Page_key":""}
+
+05-02-24 11:23:58 : {"JSON":"","Page_key":""}
+
+05-02-24 11:24:16 : {"JSON":"","Page_key":""}
+
+05-02-24 11:28:32 : {"JSON":"","Page_key":""}
+
+05-02-24 11:29:15 : {"JSON":"","Page_key":""}
+
+05-02-24 11:31:22 : {"JSON":"","Page_key":""}
+
+05-02-24 11:36:19 : {"JSON":"","Page_key":""}
+
+05-02-24 11:38:54 : {"JSON":"","Page_key":""}
+
+05-02-24 11:41:11 : {"JSON":"","Page_key":""}
+
+05-02-24 11:41:48 : {"JSON":"","Page_key":""}
+
+05-02-24 11:43:41 : {"JSON":"","Page_key":""}
+
+05-02-24 11:44:51 : {"JSON":"","Page_key":""}
+
+05-02-24 11:45:56 : {"JSON":"","Page_key":""}
+
+05-02-24 11:46:28 : {"JSON":"","Page_key":""}
+
+05-02-24 11:47:28 : {"JSON":"","Page_key":""}
+
+05-02-24 11:47:58 : {"JSON":"","Page_key":""}
+
+05-02-24 11:48:07 : {"JSON":"","Page_key":""}
+
+05-02-24 11:48:36 : {"JSON":"","Page_key":""}
+
+05-02-24 11:49:22 : {"JSON":"","Page_key":""}
+
+05-02-24 11:49:45 : {"JSON":"","Page_key":""}
+
+05-02-24 11:49:57 : {"JSON":"","Page_key":""}
+
+05-02-24 11:50:29 : {"JSON":"","Page_key":""}
+
+05-02-24 11:50:30 : {"Module":"SupportTicket","Page_key":"getTotalGrievances","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 11:50:30 : SELECT COUNT(*)  as totalgrievances FROM  `grievance_lodge_grievance`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+05-02-24 11:50:30 : SELECT count(*) as underprocessgrievance FROM  `grievance_lodge_grievance` where status = 3 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+05-02-24 11:50:30 : SELECT COUNT(*)  as closedgrievances FROM  `grievance_lodge_grievance` where status = 4; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+05-02-24 11:50:30 : SELECT COUNT(*)  as noresponsegrievance FROM  `grievance_lodge_grievance` where status = 2; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+05-02-24 11:50:30 : {"Module":"SupportTicket","Page_key":"getRecentLodgeGrievances","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 11:50:30 : SELECT LodgeID,CreatedDateTime,Status,Remarks FROM `grievance_lodge_grievance`
+        ORDER BY CreatedDateTime DESC
+        LIMIT 5 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+05-02-24 11:50:30 : {"Module":"SupportTicket","Page_key":"loadPieChart","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 11:50:30 : SELECT status, COUNT(*) as count FROM `grievance_lodge_grievance` GROUP BY status 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+05-02-24 11:50:30 : Unknown error type: [2] foreach() argument must be of type array|object, bool given<br />
+  Fatal error on line 331 in file C:\wamp64\www\testing_loan\loan\app\modules\supportTicket\classes\SupportTicket.php
+Aborting...<br />
+
+
+05-02-24 11:50:35 : {"JSON":"","Page_key":""}
+
+05-02-24 11:55:41 : {"JSON":"","Page_key":""}
+
+05-02-24 11:55:41 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 11:55:41 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+05-02-24 11:55:41 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+05-02-24 12:07:59 : {"JSON":"","Page_key":""}
+
+05-02-24 12:07:59 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 12:07:59 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+05-02-24 12:07:59 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:46 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:47 : {"JSON":"","Page_key":""}
+
+05-02-24 12:10:47 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:15:16 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:27:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:37:14 : {"JSON":"","Page_key":""}
+
+05-02-24 12:42:19 : {"JSON":"","Page_key":""}
+
+05-02-24 12:43:34 : {"JSON":"","Page_key":""}
+
+05-02-24 12:43:51 : {"JSON":"","Page_key":""}
+
+05-02-24 12:44:06 : {"JSON":"","Page_key":""}
+
+05-02-24 12:53:04 : {"JSON":"","Page_key":""}
+
+05-02-24 12:59:23 : {"JSON":"","Page_key":""}
+
+05-02-24 12:59:52 : {"JSON":"","Page_key":""}
+
+05-02-24 01:00:24 : {"JSON":"","Page_key":""}
+
+05-02-24 01:00:27 : {"JSON":"","Page_key":""}
+
+05-02-24 02:44:45 : {"JSON":"","Page_key":""}
+
+05-02-24 02:57:01 : {"JSON":"","Page_key":""}
+
+05-02-24 02:57:01 : {"JSON":"","Page_key":""}
+
+05-02-24 02:57:03 : {"JSON":"","Page_key":""}
+
+05-02-24 02:57:11 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 02:57:11 : Reached request Login
+
+05-02-24 02:57:11 : {"JSON":"","Page_key":""}
+
+05-02-24 03:08:01 : {"JSON":"","Page_key":""}
+
+05-02-24 03:08:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:14:30 : {"JSON":"","Page_key":""}
+
+05-02-24 03:24:25 : {"JSON":"","Page_key":""}
+
+05-02-24 03:24:30 : {"JSON":"","Page_key":""}
+
+05-02-24 03:24:46 : {"JSON":"","Page_key":""}
+
+05-02-24 03:24:49 : {"JSON":"","Page_key":""}
+
+05-02-24 03:24:57 : {"JSON":"","Page_key":""}
+
+05-02-24 03:25:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:27:46 : {"JSON":"","Page_key":""}
+
+05-02-24 03:27:49 : {"JSON":"","Page_key":""}
+
+05-02-24 03:29:01 : {"JSON":"","Page_key":""}
+
+05-02-24 03:29:03 : {"JSON":"","Page_key":""}
+
+05-02-24 03:29:06 : {"JSON":"","Page_key":""}
+
+05-02-24 03:29:06 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 03:29:07 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+05-02-24 03:29:07 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+05-02-24 03:30:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:30:13 : {"JSON":"","Page_key":""}
+
+05-02-24 03:30:15 : {"JSON":"","Page_key":""}
+
+05-02-24 03:30:16 : {"JSON":"","Page_key":""}
+
+05-02-24 03:35:14 : {"JSON":"","Page_key":""}
+
+05-02-24 03:35:22 : {"JSON":"","Page_key":""}
+
+05-02-24 03:35:32 : {"JSON":"","Page_key":""}
+
+05-02-24 03:37:42 : {"JSON":"","Page_key":""}
+
+05-02-24 03:37:42 : {"JSON":"","Page_key":""}
+
+05-02-24 03:37:42 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:39:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:02 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:23 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:24 : {"JSON":"","Page_key":""}
+
+05-02-24 03:44:24 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:45:43 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:48:44 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:49:17 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:50:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:52:09 : {"JSON":"","Page_key":""}
+
+05-02-24 03:52:42 : {"JSON":"","Page_key":""}
+
+05-02-24 03:52:42 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 03:52:42 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+05-02-24 03:52:42 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+05-02-24 03:52:57 : {"JSON":"","Page_key":""}
+
+05-02-24 03:52:59 : {"JSON":"","Page_key":""}
+
+05-02-24 03:53:04 : {"JSON":"","Page_key":""}
+
+05-02-24 03:53:06 : {"JSON":"","Page_key":""}
+
+05-02-24 03:53:08 : {"JSON":"","Page_key":""}
+
+05-02-24 03:53:10 : {"JSON":"","Page_key":""}
+
+05-02-24 03:53:12 : {"JSON":"","Page_key":""}
+
+05-02-24 03:56:37 : {"JSON":"","Page_key":""}
+
+05-02-24 03:56:50 : {"JSON":"","Page_key":""}
+
+05-02-24 03:59:52 : {"JSON":"","Page_key":""}
+
+05-02-24 03:59:56 : {"JSON":"","Page_key":""}
+
+05-02-24 04:02:22 : {"JSON":"","Page_key":""}
+
+05-02-24 04:02:26 : {"JSON":"","Page_key":""}
+
+05-02-24 04:02:28 : {"JSON":"","Page_key":""}
+
+05-02-24 04:02:31 : {"JSON":"","Page_key":""}
+
+05-02-24 04:02:34 : {"JSON":"","Page_key":""}
+
+05-02-24 04:02:39 : {"JSON":"","Page_key":""}
+
+05-02-24 04:03:30 : {"JSON":"","Page_key":""}
+
+05-02-24 04:03:31 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"751d31dd6b56b26b29dac2c0e1839e34"}
+
+05-02-24 04:03:32 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+05-02-24 04:03:32 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+05-02-24 04:05:30 : {"JSON":"","Page_key":""}
+
+05-02-24 04:13:09 : {"JSON":"","Page_key":""}
+
+05-02-24 04:14:50 : {"JSON":"","Page_key":""}
+
+05-02-24 04:14:57 : {"JSON":"","Page_key":""}

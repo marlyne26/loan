@@ -8,33 +8,24 @@
 <div class="container-fluid">
 <div class="row mb-2">
 <div class="col-sm-6">
-<h1>Invoice</h1>
+<h1>Statement</h1>
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
 <li class="breadcrumb-item"><a href="#">Home</a></li>
-<li class="breadcrumb-item active">Invoice</li>
+<li class="breadcrumb-item active">Statement</li>
 </ol>
 </div>
 </div>
 </div>
 </section>
-<section class="content">
-<div class="container-fluid">
-<div class="row">
-<div class="col-12">
-<div class="callout callout-info">
-<h5><i class="fas fa-info"></i> Note:</h5>
-This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
-</div>
-
 <div class="invoice p-3 mb-3">
 
 <div class="row">
 <div class="col-12">
 <h4>
 <i class="fas fa-globe"></i> ITPL Bank
-<small class="float-right">Date: 2/10/2014</small>
+<small class="float-right">Date: 2/04/2023</small>
 </h4>
 </div>
 
@@ -42,50 +33,40 @@ This page has been enhanced for printing. Click the print button at the bottom o
 
 <div class="row">
 <div class="col-12 table-responsive">
-<table class="table table-striped">
+<table>
 <thead>
 <tr>
-<th>Qty</th>
-<th>Product</th>
-<th>Serial #</th>
-<th>Description</th>
-<th>Subtotal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Call of Duty</td>
-<td>455-981-221</td>
-<td>El snort testosterone trophy driving gloves handsome</td>
-<td>$64.50</td>
+    <td><b>A/c Name:</b></td><td>Mr. ABC</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Need for Speed IV</td>
-<td>247-925-726</td>
-<td>Wes Anderson umami biodiesel</td>
-<td>$50.00</td>
+    <td><b>Add:</b></td></td><td>abcdefgh</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Monsters DVD</td>
-<td>735-845-642</td>
-<td>Terry Richardson helvetica tousled street art master</td>
-<td>$10.70</td>
+    <td><b>Date:<b></td></td><td>123456789</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Grown Ups Blue Ray</td>
-<td>422-568-642</td>
-<td>Tousled lomo letterpress</td>
-<td>$25.99</td>
+    <td><b>A/c No:</b></td><td>02354897</td>
 </tr>
-</tbody>
-</table>
-</div>
+<tr>
+    <td><b>A/c Desc:</b></td><td>ITPL-ancbvcvc</td>
+</tr>
+<tr>
+    <td><b>Branch:</b></td><td>Polo</td>
+</tr>
+<tr>
+    <td><b>Interest Rate:</b></td><td>3.5</td>
+</tr>
+<tr>
+    <td><b>IFSC Code:</b></td><td>abdcfeghgc</td>
+</tr>
+<tr>
+    <td><b>MICR code:</b></td><td>21364984651</td>
+</tr>
+<tr>
+    <td><b>Balance as on 1 April 2023:</b></td><td>1,523.04</td>
+</tr>
 
-</div>
+<text> A/C Statement from 1 April 2023 to 31 March 2023</text>
 
 
 <div class="row">
@@ -93,89 +74,52 @@ This page has been enhanced for printing. Click the print button at the bottom o
 <table class="table table-striped">
 <thead>
 <tr>
-<th>Qty</th>
-<th>Product</th>
-<th>Serial #</th>
+<th>Date</th>
 <th>Description</th>
-<th>Subtotal</th>
+<th>Ref No./ Cheque No.</th>
+<th>Debit</th>
+<th>Credit</th>
+<th>Balance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Call of Duty</td>
+<td>123</td>
+<td>Credit Interest</td>
 <td>455-981-221</td>
-<td>El snort testosterone trophy driving gloves handsome</td>
-<td>$64.50</td>
+<td>7.34</td>
+<td>9.00</td>
+<td>Bal</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Need for Speed IV</td>
+<td>456</td>
+<td>Something...</td>
 <td>247-925-726</td>
-<td>Wes Anderson umami biodiesel</td>
-<td>$50.00</td>
+<td>21.02</td>
+<td>50.00</td>
+<td>Bal</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Monsters DVD</td>
+<td>789</td>
+<td>To Transfer....</td>
 <td>735-845-642</td>
-<td>Terry Richardson helvetica tousled street art master</td>
-<td>$10.70</td>
+<td>85.20</td>
+<td>10.70</td>
+<td>Bal</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Grown Ups Blue Ray</td>
+<td>012</td>
+<td>To Transfer....</td>
 <td>422-568-642</td>
-<td>Tousled lomo letterpress</td>
-<td>$25.99</td>
+<td>25.36</td>
+<td>25.99</td>
+<td>Bal</td>
 </tr>
 </tbody>
 </table>
 </div>
 
 </div>
-
-<div class="row">
-
-<div class="col-6">
-<p class="lead">Payment Methods:</p>
-<img src="../../dist/img/credit/visa.png" alt="Visa">
-<img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
-<img src="../../dist/img/credit/american-express.png" alt="American Express">
-<img src="../../dist/img/credit/paypal2.png" alt="Paypal">
-<p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
-plugg
-dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-</p>
-</div>
-
-<div class="col-6">
-<p class="lead">Amount Due 2/22/2014</p>
-<div class="table-responsive">
-<table class="table">
-<tbody><tr>
-<th style="width:50%">Subtotal:</th>
-<td>$250.30</td>
-</tr>
-<tr>
-<th>Tax (9.3%)</th>
-<td>$10.34</td>
-</tr>
-<tr>
-<th>Shipping:</th>
-<td>$5.80</td>
-</tr>
-<tr>
-<th>Total:</th>
-<td>$265.24</td>
-</tr>
-</tbody></table>
-</div>
-</div>
-
-</div>
-
 
 <div class="row no-print">
 <div class="col-12">
@@ -188,17 +132,4 @@ Payment
 </button>
 </div>
 </div>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-
-</div>        <b> bank transaction</b>
-    </div>
-
-
-<script src="assets/admin/plugins/multi-select-dropdown-list-with-checkbox-jquery/jquery.multiselect.js"></script>
-<script src="assets/admin/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js">
-    
+</div>    
