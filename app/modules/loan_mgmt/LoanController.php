@@ -18,7 +18,7 @@ class LoanController implements Controller{
         switch ($page[1]) {
 
             case "Home":
-                load($viewpath . "viewLoan/Home.php");
+                load($viewpath . "Home.php");
                 break;
             
             case "loanRequest":
@@ -29,8 +29,12 @@ class LoanController implements Controller{
                 load($viewpath . "bankStatement.php");
                 break;    
 
-            case "history":
-                    load($viewpath . "paymentHistory.php");
+            case "payments":
+                    load($viewpath . "payments.php");
+                    break;    
+
+            case "plans":
+                    load($viewpath . "loanTypes.php");
                     break;    
             
             // case 'viewLoan':
