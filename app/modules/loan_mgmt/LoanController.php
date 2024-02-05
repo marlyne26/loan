@@ -17,8 +17,8 @@ class LoanController implements Controller{
 
         switch ($page[1]) {
 
-            case "viewLoan":
-                load($viewpath . "viewLoan/viewLoan.php");
+            case "Home":
+                load($viewpath . "viewLoan/Home.php");
                 break;
             
             case "loanRequest":
