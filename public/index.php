@@ -211,7 +211,7 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
         case "supports":
             SupportController::Views($page);
             break;
-
+            
         case "supportTicket":
             SupportTicketController::Views($page);
             break;

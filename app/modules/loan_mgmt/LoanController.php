@@ -24,6 +24,10 @@ class LoanController implements Controller{
             case "loanRequest":
                 load($viewpath . "loanRequest.php");
                 break;
+            
+            case "bankStatement":
+                load($viewpath . "bankStatement.php");
+                break;    
             // case 'viewLoan':
             //     load($viewpath . "viewLoan/viewLoan.php");
             //     DBController::logs("Hellop");
