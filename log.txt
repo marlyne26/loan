@@ -8192,3 +8192,143 @@ Aborting...<br />
 07-02-24 03:59:20 : {"JSON":"","Page_key":""}
 
 07-02-24 03:59:36 : {"JSON":"","Page_key":""}
+
+07-02-24 04:01:38 : {"JSON":"","Page_key":""}
+
+07-02-24 04:01:59 : {"JSON":"","Page_key":""}
+
+07-02-24 04:02:17 : {"JSON":"","Page_key":""}
+
+07-02-24 04:02:40 : {"JSON":"","Page_key":""}
+
+07-02-24 04:02:40 : {"Module":"Staff","Page_key":"getStaff","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:40 : SELECT `StaffID`, `StaffName`, Staff.`StaffCode`, Staff.`ContactNo`, Staff.`EmailID`, Staff.`GenderCode`, `DOB`, Staff.ReligionID,Settings_Religion.Religion,Staff.CasteCode, Settings_Caste.Caste,Staff.CommunityID, Settings_Community.`CommunityName`, Staff.NationalityID,Settings_Nationality.NationalityName, Staff.`Address`, `Photo`, Staff.`DesignationID`, Staff.`DepartmentID`, Staff.`OfficeID`, `JoinedDate`, `BloodGroup`, `isPhotoUpdateEnable`, Staff.`isRemoved`,so.OfficeName,Designation.DesignationName FROM Staff
+        INNER JOIN Designation ON Designation.DesignationID=Staff.DesignationID
+        INNER JOIN Settings_Gender ON Settings_Gender.GenderCode=Staff.GenderCode 
+        LEFT JOIN Settings_Caste ON Settings_Caste.CasteCode=Staff.CasteCode 
+        LEFT JOIN Settings_Religion ON Settings_Religion.ReligionID=Staff.ReligionID 
+        LEFT JOIN Settings_Community ON Settings_Community.CommunityID=Staff.CommunityID 
+        LEFT JOIN Settings_Nationality on Settings_Nationality.NationalityID=Staff.NationalityID
+        LEFT JOIN Settings_Office so on so.OfficeID=Staff.OfficeID
+        WHERE Staff.isRemoved=0; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.staff' doesn't exist
+
+07-02-24 04:02:40 : {"Module":"Settings","Page_key":"getGender","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:40 : SELECT * FROM Settings_Gender; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_gender' doesn't exist
+
+07-02-24 04:02:40 : {"Module":"Settings","Page_key":"getReligion","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:40 : SELECT * FROM Settings_Religion; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_religion' doesn't exist
+
+07-02-24 04:02:40 : {"Module":"Settings","Page_key":"getCaste","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:40 : SELECT * FROM Settings_Caste; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_caste' doesn't exist
+
+07-02-24 04:02:40 : {"Module":"Settings","Page_key":"getDesignations","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:40 : SELECT * FROM Designation 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.designation' doesn't exist
+
+07-02-24 04:02:40 : {"Module":"Settings","Page_key":"getCommunity","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:41 : SELECT * FROM Settings_Community; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_community' doesn't exist
+
+07-02-24 04:02:41 : {"Module":"Settings","Page_key":"getNationality","JSON":[],"MSC":"d72d187df41e10ea7d9fcdc7f5909205"}
+
+07-02-24 04:02:41 : SELECT * FROM `Settings_Nationality`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
+
+07-02-24 04:07:47 : {"JSON":"","Page_key":""}
+
+07-02-24 04:08:46 : {"JSON":"","Page_key":""}
+
+07-02-24 04:09:05 : {"JSON":"","Page_key":""}
+
+07-02-24 04:09:10 : {"JSON":"","Page_key":""}
+
+07-02-24 04:12:42 : {"JSON":"","Page_key":""}
+
+07-02-24 04:12:44 : {"JSON":"","Page_key":""}
+
+07-02-24 04:12:46 : {"JSON":"","Page_key":""}
+
+07-02-24 04:13:38 : {"JSON":"","Page_key":""}
+
+07-02-24 04:17:58 : {"JSON":"","Page_key":""}
+
+07-02-24 04:18:42 : {"JSON":"","Page_key":""}
+
+07-02-24 04:21:09 : {"JSON":"","Page_key":""}
+
+07-02-24 04:22:12 : {"JSON":"","Page_key":""}
+
+07-02-24 04:23:03 : {"JSON":"","Page_key":""}
+
+07-02-24 04:23:44 : {"JSON":"","Page_key":""}
+
+07-02-24 04:23:59 : {"JSON":"","Page_key":""}
+
+07-02-24 04:24:14 : {"JSON":"","Page_key":""}
+
+07-02-24 04:24:52 : {"JSON":"","Page_key":""}
+
+07-02-24 04:25:04 : {"JSON":"","Page_key":""}
+
+07-02-24 04:25:07 : {"JSON":"","Page_key":""}
+
+07-02-24 04:25:16 : {"JSON":"","Page_key":""}
+
+07-02-24 04:26:45 : {"JSON":"","Page_key":""}
+
+07-02-24 04:27:08 : {"JSON":"","Page_key":""}
+
+07-02-24 04:27:34 : {"JSON":"","Page_key":""}
+
+07-02-24 04:28:11 : {"JSON":"","Page_key":""}
+
+07-02-24 04:29:53 : {"JSON":"","Page_key":""}
+
+07-02-24 04:32:03 : {"JSON":"","Page_key":""}
+
+07-02-24 04:33:53 : {"JSON":"","Page_key":""}
+
+07-02-24 04:34:05 : {"JSON":"","Page_key":""}
+
+07-02-24 04:34:06 : {"JSON":"","Page_key":""}
+
+07-02-24 04:34:07 : {"JSON":"","Page_key":""}
+
+07-02-24 04:34:10 : {"JSON":"","Page_key":""}
+
+07-02-24 10:52:56 : {"JSON":"","Page_key":""}
+
+08-02-24 09:06:35 : {"JSON":"","Page_key":""}
+
+08-02-24 09:06:55 : {"JSON":"","Page_key":""}
+
+08-02-24 09:07:11 : {"JSON":"","Page_key":""}
+
+08-02-24 09:52:32 : {"JSON":"","Page_key":""}
+
+08-02-24 09:53:13 : {"JSON":"","Page_key":""}
+
+08-02-24 09:55:06 : {"JSON":"","Page_key":""}
+
+08-02-24 09:55:39 : {"JSON":"","Page_key":""}
+
+08-02-24 09:59:25 : {"JSON":"","Page_key":""}
+
+08-02-24 10:00:05 : {"JSON":"","Page_key":""}

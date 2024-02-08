@@ -18,7 +18,7 @@
 
 <div class="small-box bg-info">
 <div class="inner">
-<h3>Payment Expected</h3>
+<p>Payment Expected</p>
 </div>
 <div class="icon">
 <i class="ion ion-bag"></i>
@@ -31,7 +31,7 @@
 
 <div class="small-box bg-success">
 <div class="inner">
-<h3>Payments Today</h3>
+<p>Payments Today</p>
 </div>
 <div class="icon">
 <i class="ion ion-stats-bars"></i>
@@ -44,7 +44,7 @@
 
 <div class="small-box bg-warning">
 <div class="inner">
-<h3>Borrowers</h3>
+<p>Borrowers</h3>
 </div>
 <div class="icon">
 <i class="ion ion-person-add"></i>
@@ -57,7 +57,7 @@
 
   <div class="small-box bg-danger">
   <div class="inner">
-    <h3>Monthly Payment Expected</h3>
+  <p>Monthly Payment Expected</p>
   </div>
   <div class="icon">
   <i class="ion ion-pie-graph"></i>
@@ -70,7 +70,7 @@
 
   <div class="small-box bg-danger">
   <div class="inner">
-    <h3>Amount Received this Month</h3>
+    <p>Amount Received this Month</p>
   </div>
   <div class="icon">
   <i class="ion ion-pie-graph"></i>
@@ -83,7 +83,7 @@
 
   <div class="small-box bg-danger">
   <div class="inner">
-    <h3>Pending Borrowers</h3>
+    <p>Pending Borrowers</p>
   </div>
   <div class="icon">
   <i class="ion ion-pie-graph"></i>
@@ -92,5 +92,8 @@
   </div>
 </div>
 
-
 </div>
+</div>
+</div>
+</div>
+</div>  

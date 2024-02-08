@@ -8,128 +8,51 @@
 <div class="container-fluid">
 <div class="row mb-2">
 <div class="col-sm-6">
-<h1>Statement</h1>
+<h1>Bank Statement</h1>
 </div>
-<div class="col-sm-6">
-<ol class="breadcrumb float-sm-right">
-<li class="breadcrumb-item"><a href="#">Home</a></li>
-<li class="breadcrumb-item active">Statement</li>
-</ol>
-</div>
-</div>
-</div>
-</section>
-<div class="invoice p-3 mb-3">
-
-<div class="row">
-<div class="col-12">
-<h4>
-<i class="fas fa-globe"></i> ITPL Bank
-<small class="float-right">Date: 2/04/2023</small>
-</h4>
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Bank Statement Details</h3>
 </div>
 
+
+<form>
+<div class="card-body">
+<div class="form-group">
+<label for="exampleInputEmail1">Bank</label>
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Bank Name" fdprocessedid="wuoysi">
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Branch</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Branch Location" fdprocessedid="1mtnxf">
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Date</label>
+<input type="date" class="form-control" id="exampleInputPassword1" placeholder="Password" fdprocessedid="1mtnxf">
+</div>
+<div class="form-group">
+<label for="exampleInputFile">File input</label>
+<div class="input-group">
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="exampleInputFile">
+<label class="custom-file-label" for="exampleInputFile">20240206_170452.heic</label>
+</div>
+<div class="input-group-append">
+<span class="input-group-text">Upload</span>
+</div>
+</div>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
 </div>
 
-<div class="row">
-<div class="col-12 table-responsive">
-<table>
-<thead>
-<tr>
-    <td><b>A/c Name:</b></td><td>Mr. ABC</td>
-</tr>
-<tr>
-    <td><b>Add:</b></td></td><td>abcdefgh</td>
-</tr>
-<tr>
-    <td><b>Date:<b></td></td><td>123456789</td>
-</tr>
-<tr>
-    <td><b>A/c No:</b></td><td>02354897</td>
-</tr>
-<tr>
-    <td><b>A/c Desc:</b></td><td>ITPL-ancbvcvc</td>
-</tr>
-<tr>
-    <td><b>Branch:</b></td><td>Polo</td>
-</tr>
-<tr>
-    <td><b>Interest Rate:</b></td><td>3.5</td>
-</tr>
-<tr>
-    <td><b>IFSC Code:</b></td><td>abdcfeghgc</td>
-</tr>
-<tr>
-    <td><b>MICR code:</b></td><td>21364984651</td>
-</tr>
-<tr>
-    <td><b>Balance as on 1 April 2023:</b></td><td>1,523.04</td>
-</tr>
-
-<text> A/C Statement from 1 April 2023 to 31 March 2023</text>
-
-
-<div class="row">
-<div class="col-12 table-responsive">
-<table class="table table-striped">
-<thead>
-<tr>
-<th>Date</th>
-<th>Description</th>
-<th>Ref No./ Cheque No.</th>
-<th>Debit</th>
-<th>Credit</th>
-<th>Balance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>123</td>
-<td>Credit Interest</td>
-<td>455-981-221</td>
-<td>7.34</td>
-<td>9.00</td>
-<td>Bal</td>
-</tr>
-<tr>
-<td>456</td>
-<td>Something...</td>
-<td>247-925-726</td>
-<td>21.02</td>
-<td>50.00</td>
-<td>Bal</td>
-</tr>
-<tr>
-<td>789</td>
-<td>To Transfer....</td>
-<td>735-845-642</td>
-<td>85.20</td>
-<td>10.70</td>
-<td>Bal</td>
-</tr>
-<tr>
-<td>012</td>
-<td>To Transfer....</td>
-<td>422-568-642</td>
-<td>25.36</td>
-<td>25.99</td>
-<td>Bal</td>
-</tr>
-</tbody>
-</table>
+<div class="card-footer">
+<button type="submit" class="btn btn-primary" fdprocessedid="lt72qw">Submit</button>
 </div>
-
+</form>
 </div>
-
-<div class="row no-print">
-<div class="col-12">
-<a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-<button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
-Payment
-</button>
-<button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-<i class="fas fa-download"></i> Generate PDF
-</button>
 </div>
 </div>
 </div>    
