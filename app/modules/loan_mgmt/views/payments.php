@@ -72,21 +72,7 @@
                                                             <span class="customtext">(in days)</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="ResolutionLevel2"></label>Text
-                                                            <input type="number" id="ResolutionLevel2" class="form-control" autocomplete="off">
-                                                            <span class="customtext">(in days)</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="ResolutionLevel3">Text</label>
-                                                            <input type="number" id="ResolutionLevel3" class="form-control" autocomplete="off">
-                                                            <span class="customtext">(in days)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer justify-content-between">
