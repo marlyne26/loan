@@ -23,29 +23,14 @@
 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Penalty" fdprocessedid="3xosza">
 </div>
 
-<div class="form-group">
-<label for="exampleInputFile">File input</label>
-<div class="input-group">
-<div class="custom-file">
-<input type="file" class="custom-file-input" id="exampleInputFile">
-<label class="custom-file-label" for="exampleInputFile">Choose file</label>
-</div>
-<div class="input-group-append">
-<span class="input-group-text">Upload</span>
-</div>
-</div>
-</div>
-<div class="form-check">
-<input type="checkbox" class="form-check-input" id="exampleCheck1">
-<label class="form-check-label" for="exampleCheck1">Check me out</label>
-</div>
-</div>
-
 <div class="card-footer">
-<button type="submit" class="btn btn-primary" fdprocessedid="642dg">Submit</button>
+<button type="submit" class="btn btn-primary" fdprocessedid="642dg">Save</button>
 </div>
 </form>
-</div>    </div>
 </script>
 <script src="assets/admin/plugins/multi-select-dropdown-list-with-checkbox-jquery/jquery.multiselect.js"></script>
 <script src="assets/admin/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
+
+</div>
+</div>
+</div>
