@@ -9191,6 +9191,75 @@ Aborting...<br />
 
 08-02-24 04:35:56 : {"JSON":"","Page_key":""}
 
+<<<<<<< HEAD
+08-02-24 04:39:44 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:48 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:52 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:52 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:57 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:39:57 : Reached request Login
+
+08-02-24 04:39:57 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:57 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:39:57 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+08-02-24 04:39:57 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+08-02-24 04:40:00 : {"JSON":"","Page_key":""}
+
+08-02-24 04:40:01 : {"JSON":"","Page_key":""}
+
+08-02-24 04:52:51 : {"JSON":"","Page_key":""}
+
+08-02-24 04:54:10 : {"JSON":"","Page_key":""}
+
+08-02-24 04:54:31 : {"JSON":"","Page_key":""}
+
+08-02-24 04:55:07 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:17 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:20 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:20 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:25 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 05:00:25 : Reached request Login
+
+08-02-24 05:00:25 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:25 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 05:00:25 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+08-02-24 05:00:25 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+08-02-24 05:00:33 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:35 : {"JSON":"","Page_key":""}
+
+08-02-24 05:01:34 : {"JSON":"","Page_key":""}
+
+08-02-24 05:01:39 : {"JSON":"","Page_key":""}
+
+08-02-24 05:01:43 : {"JSON":"","Page_key":""}
+=======
 08-02-24 04:42:23 : {"JSON":"","Page_key":""}
 
 08-02-24 04:42:23 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
@@ -9344,6 +9413,7 @@ Aborting...<br />
 08-02-24 04:59:13 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
  [] 
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+<<<<<<< HEAD
 
 08-02-24 05:03:26 : {"JSON":"","Page_key":""}
 
@@ -9375,3 +9445,6 @@ Aborting...<br />
 08-02-24 05:03:27 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
  [] 
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+=======
+>>>>>>> dcc3256388024fa434fcd22288394311329ed9ad
+>>>>>>> 5acedfe110b61763c99f45b3ccd3da75490e9bc9
