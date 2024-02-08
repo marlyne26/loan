@@ -9190,3 +9190,71 @@ Aborting...<br />
 08-02-24 04:34:23 : {"JSON":"","Page_key":""}
 
 08-02-24 04:35:56 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:44 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:48 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:52 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:52 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:57 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:39:57 : Reached request Login
+
+08-02-24 04:39:57 : {"JSON":"","Page_key":""}
+
+08-02-24 04:39:57 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:39:57 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+08-02-24 04:39:57 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+08-02-24 04:40:00 : {"JSON":"","Page_key":""}
+
+08-02-24 04:40:01 : {"JSON":"","Page_key":""}
+
+08-02-24 04:52:51 : {"JSON":"","Page_key":""}
+
+08-02-24 04:54:10 : {"JSON":"","Page_key":""}
+
+08-02-24 04:54:31 : {"JSON":"","Page_key":""}
+
+08-02-24 04:55:07 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:17 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:20 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:20 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:25 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 05:00:25 : Reached request Login
+
+08-02-24 05:00:25 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:25 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 05:00:25 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+08-02-24 05:00:25 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+08-02-24 05:00:33 : {"JSON":"","Page_key":""}
+
+08-02-24 05:00:35 : {"JSON":"","Page_key":""}
+
+08-02-24 05:01:34 : {"JSON":"","Page_key":""}
+
+08-02-24 05:01:39 : {"JSON":"","Page_key":""}
+
+08-02-24 05:01:43 : {"JSON":"","Page_key":""}
