@@ -8536,3 +8536,657 @@ Aborting...<br />
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.settings_nationality' doesn't exist
 
 08-02-24 04:11:36 : {"JSON":"","Page_key":""}
+
+08-02-24 04:13:42 : {"JSON":"","Page_key":""}
+
+08-02-24 04:14:32 : {"JSON":"","Page_key":""}
+
+08-02-24 04:14:32 : {"Module":"SupportTicket","Page_key":"getTotalGrievances","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:33 : SELECT COUNT(*)  as totalgrievances FROM  `grievance_lodge_grievance`; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+08-02-24 04:14:33 : SELECT count(*) as underprocessgrievance FROM  `grievance_lodge_grievance` where status = 3 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+08-02-24 04:14:33 : SELECT COUNT(*)  as closedgrievances FROM  `grievance_lodge_grievance` where status = 4; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+08-02-24 04:14:33 : SELECT COUNT(*)  as noresponsegrievance FROM  `grievance_lodge_grievance` where status = 2; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+08-02-24 04:14:33 : {"Module":"SupportTicket","Page_key":"getRecentLodgeGrievances","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:33 : SELECT LodgeID,CreatedDateTime,Status,Remarks FROM `grievance_lodge_grievance`
+        ORDER BY CreatedDateTime DESC
+        LIMIT 5 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+08-02-24 04:14:33 : {"Module":"SupportTicket","Page_key":"loadPieChart","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:33 : SELECT status, COUNT(*) as count FROM `grievance_lodge_grievance` GROUP BY status 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+08-02-24 04:14:33 : Unknown error type: [2] foreach() argument must be of type array|object, bool given<br />
+  Fatal error on line 331 in file C:\wamp64\www\testing_loan\loan\app\modules\supportTicket\classes\SupportTicket.php
+Aborting...<br />
+
+
+08-02-24 04:14:36 : {"JSON":"","Page_key":""}
+
+08-02-24 04:14:36 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:36 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:14:36 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:36 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:14:36 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:36 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:14:36 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:14:36 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:16:25 : {"JSON":"","Page_key":""}
+
+08-02-24 04:16:25 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:16:25 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:16:25 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:16:25 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:16:25 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:16:25 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:16:25 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:16:25 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:18:44 : {"JSON":"","Page_key":""}
+
+08-02-24 04:18:44 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:18:44 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:18:44 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:18:44 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:18:44 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:18:44 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:18:44 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:18:44 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:20:03 : {"JSON":"","Page_key":""}
+
+08-02-24 04:20:03 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:03 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:20:03 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:03 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:20:03 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:03 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:20:03 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:03 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:20:46 : {"JSON":"","Page_key":""}
+
+08-02-24 04:20:46 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:46 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:20:46 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:46 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:20:46 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:46 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:20:46 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:20:46 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:22:19 : {"JSON":"","Page_key":""}
+
+08-02-24 04:22:19 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:22:19 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:22:19 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:22:19 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:22:19 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:22:19 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:22:19 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:22:19 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:11 : {"JSON":"","Page_key":""}
+
+08-02-24 04:23:11 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:11 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:11 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:11 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:11 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:11 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:11 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:11 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:43 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:43 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:43 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:43 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:43 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:43 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:43 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:43 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:47 : {"JSON":"","Page_key":""}
+
+08-02-24 04:23:47 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:47 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:47 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:47 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:47 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:47 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:47 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:47 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:52 : {"JSON":"","Page_key":""}
+
+08-02-24 04:23:53 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:53 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:53 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:53 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:23:53 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:53 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:23:53 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:23:53 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:25:23 : {"JSON":"","Page_key":""}
+
+08-02-24 04:25:23 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:23 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:25:23 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:23 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:25:23 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:23 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:25:23 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:23 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:25:43 : {"JSON":"","Page_key":""}
+
+08-02-24 04:25:43 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:43 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:25:43 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:43 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:25:43 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:43 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:25:43 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:43 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:25:50 : {"JSON":"","Page_key":""}
+
+08-02-24 04:25:51 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:51 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:25:51 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:51 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:25:51 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:51 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:25:51 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:25:51 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:27:33 : {"JSON":"","Page_key":""}
+
+08-02-24 04:27:33 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:27:33 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:27:33 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:27:33 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:27:33 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:27:33 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:27:33 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:27:33 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:28:20 : {"JSON":"","Page_key":""}
+
+08-02-24 04:28:20 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:20 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:28:20 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:20 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:28:20 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:20 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:28:20 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:20 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:28:26 : {"JSON":"","Page_key":""}
+
+08-02-24 04:28:26 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:26 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:28:26 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:26 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:28:26 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:26 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:28:26 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:28:26 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:28:43 : {"JSON":"","Page_key":""}
+
+08-02-24 04:28:47 : {"JSON":"","Page_key":""}
+
+08-02-24 04:28:52 : {"JSON":"","Page_key":""}
+
+08-02-24 04:28:58 : {"JSON":"","Page_key":""}
+
+08-02-24 04:29:01 : {"JSON":"","Page_key":""}
+
+08-02-24 04:29:01 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:29:01 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:29:01 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:29:01 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:29:01 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:29:01 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:29:01 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:29:01 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:29:10 : {"JSON":"","Page_key":""}
+
+08-02-24 04:31:09 : {"JSON":"","Page_key":""}
+
+08-02-24 04:31:16 : {"JSON":"","Page_key":""}
+
+08-02-24 04:31:18 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:31:18 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:31:18 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:31:18 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:31:18 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:31:18 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:31:18 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:31:18 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:31:21 : {"JSON":"","Page_key":""}
+
+08-02-24 04:31:47 : {"JSON":"","Page_key":""}
+
+08-02-24 04:32:59 : {"JSON":"","Page_key":""}
+
+08-02-24 04:32:59 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:32:59 : SELECT gc1.GrievanceCategory as MainCategory, gc2.GrievanceCategory as SubCategory,gc1.CategoryLevel as SubCategoryLevelID, gc1.ResolutionLevel1, gc1.ResolutionLevel2, gc1.ResolutionLevel3 
+                                        FROM grievance_category gc1 
+                                        LEFT JOIN grievance_category gc2 ON gc1.GrievanceCategoryID = gc2.UnderCategoryID 
+                                        GROUP BY gc1.GrievanceCategoryID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:32:59 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:32:59 : SELECT DISTINCT (IFNULL(CategoryLevel, -1)+1) AS `Level`,   (IFNULL(CategoryLevel, -1)+1) AS CategoryLevels FROM   Grievance_Category 
+                 union all  
+                 select 0 as Level, 0 as CategoryLevels;  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category' doesn't exist
+
+08-02-24 04:32:59 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:32:59 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:32:59 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"fad6f4e614a212e80c67249a666d2b09"}
+
+08-02-24 04:32:59 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+08-02-24 04:33:02 : {"JSON":"","Page_key":""}
+
+08-02-24 04:34:03 : {"JSON":"","Page_key":""}
+
+08-02-24 04:34:18 : {"JSON":"","Page_key":""}
+
+08-02-24 04:34:23 : {"JSON":"","Page_key":""}
+
+08-02-24 04:35:56 : {"JSON":"","Page_key":""}
