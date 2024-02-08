@@ -4,20 +4,25 @@
     <div class="content-wrapper" id="maincontent">
     <div class="card card-primary">
 <div class="card-header">
-<h3 class="card-title">Quick Example</h3>
+<h3 class="card-title">Loan Types</h3>
 </div>
 
 
 <form>
 <div class="card-body">
 <div class="form-group">
-<label for="exampleInputEmail1">Email address</label>
-<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" fdprocessedid="2i3hvk">
+<label for="exampleInputEmail1">Loan Name</label>
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Loan Name" fdprocessedid="2i3hvk">
 </div>
 <div class="form-group">
-<label for="exampleInputPassword1">Password</label>
-<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" fdprocessedid="3xosza">
+<label for="exampleInputPassword1">Interest</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Interest Rate" fdprocessedid="3xosza">
 </div>
+<div class="form-group">
+<label for="exampleInputPassword1">Monthly Overdue Penalty</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Penalty" fdprocessedid="3xosza">
+</div>
+
 <div class="form-group">
 <label for="exampleInputFile">File input</label>
 <div class="input-group">
