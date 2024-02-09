@@ -133,7 +133,6 @@
                             </a>
                         </li>
                     </ul>
-
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="loan-bankStatement" class="nav-link">
@@ -142,12 +141,23 @@
                             </a>
                         </li>
                     </ul>
-
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="loan-payments" class="nav-link">
                                 <i class="fa fa-users"></i>
+<<<<<<< HEAD
                                 <p>Payments</p>
+=======
+                                <p>Payment</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="loan-types" class="nav-link">
+                                <i class="fa fa-users"></i>
+                                <p>Loan Types</p>
+>>>>>>> 59ab58a48a146fd11c84bca9484a02c8d7b50818
                             </a>
                         </li>
                     </ul>
