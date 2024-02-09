@@ -28,59 +28,60 @@
                             </span>
                             <div class="modal fade" id="modal-lg">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title"> Payment Form</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-6">
+                                <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Payment Form</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
 
-                                                    </div>
+                    </div>
 
-                                                    <!-- inputField -->
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="CategoryLevels">Reference Number</label>
-                                                            <select class="form-control js-example-basic-multiple" id="CategoryLevels">
-                                                            </select>
+                    <!-- inputField -->
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label for="CategoryLevels">Reference Number</label>
+                            <select class="form-control js-example-basic-multiple" id="CategoryLevels">
+                            </select>
 
-                                                        </div>
+                        </div>
 
-                                                        <div class="form-group">
-                                                            <label for="productModule">Payee</label>
-                                                            <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off">
-                                                        </div>
+                        <div class="form-group">
+                            <label for="productModule">Payee</label>
+                            <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off">
+                        </div>
 
-                                                    </div>
-                                                </div>
+                    </div>
+                </div>
 
 
-                                                <div class="row" id="subcategory">
+                <div class="row" id="subcategory">
 
-                                                </div>
+                </div>
 
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="ResolutionLevel1">Amount</label>
-                                                            <input type="number" id="ResolutionLevel1" class="form-control" autocomplete="off">
-                                                            <span class="customtext">(in days)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer justify-content-between">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary" id="AddCategory">Save
-                                            </button>
-                                        </div>
-                                    </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="ResolutionLevel1">Amount</label>
+                            <input type="number" id="ResolutionLevel1" class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="AddCategory">Save</button>
+        </div>
+    </div>
+</div>
+
                                     <!-- /.modal-content -->
                                 </div>
                                 <!-- /.modal-dialog -->

@@ -22,91 +22,6 @@
                     </a>
                 </li>
 
-                <!-- Grievances -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fad fa-file-export"></i>
-                        <p>
-                            Grievance
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supportTicket-dashboard" class="nav-link">
-                                <i class="fa fa-plus-circle"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supportTicket-categorygrievance" class="nav-link">
-                                <i class="fa fa-plus-circle"></i>
-                                <p>Category Grievance</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supportTicket-lodgegrievance" class="nav-link">
-                                <i class="fa fa-plus-circle"></i>
-                                <p>Lodge Grievance</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Staff -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-user"></i>
-                        <p>
-                            Users
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="staff-staffList" class="nav-link">
-                                <i class="fa fa-list "></i>
-                                <p>Staff List</p>
-                            </a>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-clock"></i>
-                                <p>
-                                    Attendance
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <!-- Staff Attendance -->
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="staff-staffAttendance" class="nav-link">
-                                        <i class="fa fa-plus-circle"></i>
-                                        <p>Take Attendance</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="staff-staffAttendanceSetting" class="nav-link">
-                                        <i class="fad fa-cogs"></i>
-                                        <p>Setting</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="staff-staffAttendanceReports" class="nav-link">
-                                        <i class="fa fa-list"></i>
-                                        <p>Report</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                     <i class="fa fa-university" aria-hidden="true"></i>                        
@@ -133,6 +48,7 @@
                             </a>
                         </li>
                     </ul>
+
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="loan-bankStatement" class="nav-link">
@@ -141,70 +57,17 @@
                             </a>
                         </li>
                     </ul>
+
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="loan-payments" class="nav-link">
                                 <i class="fa fa-users"></i>
-<<<<<<< HEAD
                                 <p>Payments</p>
-=======
-                                <p>Payment</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="loan-types" class="nav-link">
-                                <i class="fa fa-users"></i>
-                                <p>Loan Types</p>
->>>>>>> 59ab58a48a146fd11c84bca9484a02c8d7b50818
                             </a>
                         </li>
                     </ul>
                 </li>
-                <!-- products -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                    <i class="fa fa-folder" aria-hidden="true"></i>
-                        <p>
-                            Product
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="products-product" class="nav-link">
-                                <i class="fa fa-list-alt nav-icon text-info"></i>
-                                <p>Manage Product</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products-productsubscription" class="nav-link">
-                                <i class="fa fa-bell nav-icon text-info"></i>
-                                <p> Product Subscription</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products-productversion" class="nav-link">
-                                <i class="fa fa-list-alt nav-icon text-info"></i>
-                                <p> Product Version</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products-managebasedfilepath" class="nav-link">
-                                <i class="fa fa-list-alt nav-icon text-info"></i>
-                                <p> Product Based Files</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="products-viewleads" class="nav-link">
-                                <i class="fa fa-list-alt nav-icon text-info"></i>
-                                <p> View Leads</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
+            
                 <!-- support -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
