@@ -11353,3 +11353,65 @@ Aborting...<br />
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
 
 09-02-24 04:19:50 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:43 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:53 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:54 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:55 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:56 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:57 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:58 : {"JSON":"","Page_key":""}
+
+09-02-24 04:30:59 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:03 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:04 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:40 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:41 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:42 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:47 : {"JSON":"","Page_key":""}
+
+09-02-24 04:31:50 : {"JSON":"","Page_key":""}
+
+09-02-24 04:32:55 : {"JSON":"","Page_key":""}
+
+09-02-24 04:33:45 : {"JSON":"","Page_key":""}
+
+09-02-24 04:33:47 : {"JSON":"","Page_key":""}
+
+09-02-24 04:33:48 : {"JSON":"","Page_key":""}
+
+09-02-24 04:34:12 : {"JSON":"","Page_key":""}
+
+09-02-24 04:34:18 : {"JSON":"","Page_key":""}
+
+09-02-24 04:34:18 : {"JSON":"","Page_key":""}
+
+09-02-24 04:34:25 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"0a8005f5594bd67041f88c6196192646"}
+
+09-02-24 04:34:25 : Reached request Login
+
+09-02-24 04:34:25 : {"JSON":"","Page_key":""}
+
+09-02-24 04:34:25 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"0a8005f5594bd67041f88c6196192646"}
+
+09-02-24 04:34:25 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+09-02-24 04:34:25 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+09-02-24 04:34:27 : {"JSON":"","Page_key":""}

@@ -111,16 +111,16 @@
                     <a href="#" class="nav-link">
                     <i class="fa fa-university" aria-hidden="true"></i>                        
                         <p>
-                            Manage Loans
+                            Loans
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                        <a href="loan-viewLoans" class="nav-link">
+                        <a href="loan-Home" class="nav-link">
                             <i class="fa fa-folder" aria-hidden="true"></i>
-                                <p>View all Loans</p>
+                                <p>Home</p>
                             </a>
                         </li>
                     </ul>
@@ -131,7 +131,7 @@
                                 <i class="fa fa-users"></i>
                                 <p>View Loan Request</p>
                             </a>
-                        </li> 
+                        </li>
                     </ul>
 
                     <ul class="nav nav-treeview">
