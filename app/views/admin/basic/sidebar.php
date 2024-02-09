@@ -96,7 +96,7 @@
                                 <i class="fa fa-users"></i>
                                 <p>View Loan Request</p>
                             </a>
-                        </li>
+                        </li> 
                     </ul>
 
                     <ul class="nav nav-treeview">
