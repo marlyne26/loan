@@ -22,40 +22,6 @@
                     </a>
                 </li>
 
-                <!-- Grievances -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fad fa-file-export"></i>
-                        <p>
-                            Grievance
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supportTicket-dashboard" class="nav-link">
-                                <i class="fa fa-plus-circle"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supportTicket-categorygrievance" class="nav-link">
-                                <i class="fa fa-plus-circle"></i>
-                                <p>Category Grievance</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supportTicket-lodgegrievance" class="nav-link">
-                                <i class="fa fa-plus-circle"></i>
-                                <p>Lodge Grievance</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">

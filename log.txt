@@ -9954,3 +9954,29 @@ Aborting...<br />
 09-02-24 03:32:56 : SELECT  glg.`LodgeID`,glg.`Remarks`,glg.`CreatedDateTime`,glg.`Priority`,glg.`Status` , gcd.DepartmentName as 'Concern_Department' ,gcds.StaffName as 'Concern_Staff' FROM `grievance_lodge_grievance` as glg INNER JOIN `grievance_category` as gc ON glg.CategoryID= gc.GrievanceCategoryID INNER JOIN `grievance_category_department` as gcd  ON gc.DepartmentID  = gcd.DepartmentID INNER JOIN  `grievance_category_department_staff` gcds ON gc.StaffIDs = gcds.StaffID; 
  [] 
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_lodge_grievance' doesn't exist
+
+09-02-24 03:41:35 : {"JSON":"","Page_key":""}
+
+09-02-24 03:41:38 : {"JSON":"","Page_key":""}
+
+09-02-24 03:41:38 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"0a8005f5594bd67041f88c6196192646"}
+
+09-02-24 03:41:38 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+09-02-24 03:41:38 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
+
+09-02-24 03:41:39 : {"JSON":"","Page_key":""}
+
+09-02-24 03:41:39 : {"Module":"Settings","Page_key":"getAllvisitedUserInaDay","JSON":[],"MSC":"0a8005f5594bd67041f88c6196192646"}
+
+09-02-24 03:41:39 : SELECT count(*) as totalApplicants FROM `Prayagedu_Applicants` where isActive=1 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_applicants' doesn't exist
+
+09-02-24 03:41:39 : SELECT count(*)  as totalActive FROM `Prayagedu_Careers` where isActive=1; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.prayagedu_careers' doesn't exist
