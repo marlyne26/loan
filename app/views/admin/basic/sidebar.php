@@ -109,18 +109,18 @@
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="fa fa-university" aria-hidden="true"></i>
+                    <i class="fa fa-university" aria-hidden="true"></i>                        
                         <p>
-                            Loan
+                            Manage Loans
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="loan-Home" class="nav-link">
-                                <i class="fa fa-users" ></i>
-                                <p>Home</p>
+                        <a href="loan-viewLoans" class="nav-link">
+                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                <p>View all Loans</p>
                             </a>
                         </li>
                     </ul>
@@ -128,7 +128,7 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="loan-loanRequest" class="nav-link">
-                                <i class="fa fa-users" ></i>
+                                <i class="fa fa-users"></i>
                                 <p>View Loan Request</p>
                             </a>
                         </li>
@@ -136,7 +136,7 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="loan-bankStatement" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <i class="fa fa-users"></i>
                                 <p>Bank Statement</p>
                             </a>
@@ -145,18 +145,9 @@
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="loan-types" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <i class="fa fa-users"></i>
-                                <p>Loan Types</p>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="loan-payments" class="nav-link">
-                                <i class="fa fa-users"></i>
-                                <p>Payments</p>
+                                <p>History</p>
                             </a>
                         </li>
                     </ul>
@@ -164,7 +155,7 @@
                 <!-- products -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="fa fa-folder" aria-hidden="true"></i>
+                    <i class="fa fa-folder" aria-hidden="true"></i>
                         <p>
                             Product
                             <i class="right fas fa-angle-left"></i>
