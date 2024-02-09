@@ -39,7 +39,7 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                    
+
                                                     </div>
 
                                                     <!-- inputField -->
@@ -51,10 +51,10 @@
 
                                                         </div>
 
-                                                    <div class="form-group">
+                                                        <div class="form-group">
                                                             <label for="productModule">Payee</label>
                                                             <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off">
-                                                    </div>
+                                                        </div>
 
                                                     </div>
                                                 </div>
@@ -72,7 +72,7 @@
                                                             <span class="customtext">(in days)</span>
                                                         </div>
                                                     </div>
-                                                 </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer justify-content-between">
@@ -97,7 +97,6 @@
                                         <th scope="col">Mode of Payment</th>
                                         <th scope="col">Date</th>
                                         <th>Action</th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
