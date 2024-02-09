@@ -2,13 +2,15 @@
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
-        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+        </div>
       </div>
     </div>
   </div>
 
   <section class="content">
     <div class="container-fluid">
+
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -37,53 +39,53 @@
                         </tr>
                       </thead>
                       <tbody>
-  <tr class="odd">
-    <td class="dtr-control sorting_1" tabindex="0">Housing</td>
-    <td>3</td>
-    <td>Shillong</td>
-    <td>1.7</td>
-    <td>20</td>
-    <!-- New button in the "Action" column -->
-    <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
-  </tr>
-  <tr class="even">
-    <td class="dtr-control sorting_1" tabindex="0">Education</td>
-    <td>4</td>
-    <td>Shillong</td>
-    <td>1.8</td>
-    <td>20</td>
-    <!-- New button in the "Action" column -->
-    <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
-  </tr>
-  <tr class="odd">
-    <td class="dtr-control sorting_1" tabindex="0">Land</td>
-    <td>5</td>
-    <td>Shillong</td>
-    <td>1.8</td>
-    <td>20</td>
-    <!-- New button in the "Action" column -->
-    <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
-  </tr>
-  <!-- Add more records as needed -->
-  <tr class="even">
-    <td class="dtr-control sorting_1" tabindex="0">Car</td>
-    <td>3</td>
-    <td>Shillong</td>
-    <td>1.9</td>
-    <td>20</td>
-    <!-- New button in the "Action" column -->
-    <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
-  </tr>
-  <tr class="odd">
-    <td class="sorting_1 dtr-control">Personal</td>
-    <td>2</td>
-    <td>Shillong</td>
-    <td>1.8</td>
-    <td>20</td>
-    <!-- New button in the "Action" column -->
-    <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
-  </tr>
-</tbody>
+                        <tr class="odd">
+                          <td class="dtr-control sorting_1" tabindex="0">Housing</td>
+                          <td>3</td>
+                          <td>Shillong</td>
+                          <td>1.7</td>
+                          <td>20</td>
+                          <!-- New button in the "Action" column -->
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                        </tr>
+                        <tr class="even">
+                          <td class="dtr-control sorting_1" tabindex="0">Education</td>
+                          <td>4</td>
+                          <td>Shillong</td>
+                          <td>1.8</td>
+                          <td>20</td>
+                          <!-- New button in the "Action" column -->
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="dtr-control sorting_1" tabindex="0">Land</td>
+                          <td>5</td>
+                          <td>Shillong</td>
+                          <td>1.8</td>
+                          <td>20</td>
+                          <!-- New button in the "Action" column -->
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                        </tr>
+                        <!-- Add more records as needed -->
+                        <tr class="even">
+                          <td class="dtr-control sorting_1" tabindex="0">Car</td>
+                          <td>3</td>
+                          <td>Shillong</td>
+                          <td>1.9</td>
+                          <td>20</td>
+                          <!-- New button in the "Action" column -->
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                        </tr>
+                        <tr class="odd">
+                          <td class="sorting_1 dtr-control">Personal</td>
+                          <td>2</td>
+                          <td>Shillong</td>
+                          <td>1.8</td>
+                          <td>20</td>
+                          <!-- New button in the "Action" column -->
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                        </tr>
+                      </tbody>
                     </table>
                   </div>
                 </div>
