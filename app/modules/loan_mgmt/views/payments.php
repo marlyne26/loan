@@ -54,7 +54,7 @@
 
                         <div class="form-group">
                             <label for="productModule">Payee</label>
-                            <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off">
+                            <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off" required>
                         </div>
 
                     </div>
@@ -69,7 +69,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="ResolutionLevel1">Amount</label>
-                            <input type="number" id="ResolutionLevel1" class="form-control" autocomplete="off">
+                            <input type="number" id="ResolutionLevel1" class="form-control" autocomplete="off" required>
                         </div>
                     </div>
                 </div>
