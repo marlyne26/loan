@@ -47,14 +47,14 @@
                                                         <div class="col-md-10">
                                                             <div class="form-group">
                                                                 <label for="CategoryLevels">Reference Number</label>
-                                                                <select class="form-control js-example-basic-multiple" id="CategoryLevels" required>
+                                                                <select class="form-control js-example-basic-multiple" id="referenceNumber" required>
                                                                 </select>
 
                                                             </div>
 
                                                             <div class="form-group">
                                                                 <label for="productModule">Payee</label>
-                                                                <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off" required>
+                                                                <input type="text" id="payeeName" class="form-control" placeholder="Payee Name" autocomplete="off" required>
                                                             </div>
 
                                                         </div>
@@ -397,15 +397,15 @@
     $("#btn-addPayment").click(
         function addPayment() {
             //getting the textfield id and assigning it to a variable
-            var grievanceCategory = document.getElementById('GrievanceCategory').value;
+            var refNum = document.getElementById('referenceNumber').value;
             //getting the textfield id and assigning it to a variable
             var amount = document.getElementById('amount').value;
             //getting the textfield id and assigning it to a variable
-            var categoryLevels = document.getElementById('CategoryLevels').value;
+            var payee = document.getElementById('payeeName').value;
 
-            // Check if any of the fields is empty (Validation)
-            if (grievanceCategory === '' || amount === '' || categoryLevels === '') {
-                // Print an error message
+            //Check if any of the fields is empty (Validation)
+            if (refNum === '' || amount === '' || payee === '') {
+                //Print an error message
                 alert('All fields are compulsory. Please fill in all the areas.');
            
             }
