@@ -28,59 +28,59 @@
                             </span>
                             <div class="modal fade" id="modal-lg">
                                 <div class="modal-dialog modal-lg">
-                                <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title">Payment Form</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-3">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Payment Form</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
 
-                    </div>
+                                                        </div>
 
-                    <!-- inputField -->
-                    <div class="col-md-10">
-                        <div class="form-group">
-                            <label for="CategoryLevels">Reference Number</label>
-                            <select class="form-control js-example-basic-multiple" id="CategoryLevels" required>
-                            </select>
+                                                        <!-- inputField -->
+                                                        <div class="col-md-10">
+                                                            <div class="form-group">
+                                                                <label for="CategoryLevels">Reference Number</label>
+                                                                <select class="form-control js-example-basic-multiple" id="CategoryLevels" required>
+                                                                </select>
 
-                        </div>
+                                                            </div>
 
-                        <div class="form-group">
-                            <label for="productModule">Payee</label>
-                            <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off" required>
-                        </div>
+                                                            <div class="form-group">
+                                                                <label for="productModule">Payee</label>
+                                                                <input type="text" id="GrievanceCategory" class="form-control" placeholder="Payee Name" autocomplete="off" required>
+                                                            </div>
 
-                    </div>
-                </div>
+                                                        </div>
+                                                    </div>
 
 
-                <div class="row" id="subcategory">
+                                                    <div class="row" id="subcategory">
 
-                </div>
+                                                    </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="amount">Amount</label>
-                            <input type="number" id="amount" class="form-control" autocomplete="off" required>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="btn-addPayment">Save</button>
-        </div>
-    </div>
-</div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="amount">Amount</label>
+                                                                <input type="number" id="amount" class="form-control" autocomplete="off" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer justify-content-between">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary" id="btn-addPayment">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <!-- /.modal-content -->
                                 </div>
@@ -394,12 +394,24 @@
 
     });
 
-    $("#btn-addPayment").click(function()
-      if(
-        
-      ) 
+    $("#btn-addPayment").click(
+        function addPayment() {
+            //getting the textfield id and assigning it to a variable
+            var grievanceCategory = document.getElementById('GrievanceCategory').value;
+            //getting the textfield id and assigning it to a variable
+            var amount = document.getElementById('amount').value;
+            //getting the textfield id and assigning it to a variable
+            var categoryLevels = document.getElementById('CategoryLevels').value;
 
-    });
+            // Check if any of the fields is empty (Validation)
+            if (grievanceCategory === '' || amount === '' || categoryLevels === '') {
+                // Print an error message
+                alert('All fields are compulsory. Please fill in all the areas.');
+           
+            }
+        }
+    );
+
 
     function clearform() {
         $('#GrievanceCategory').val('');
