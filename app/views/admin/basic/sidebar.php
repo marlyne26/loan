@@ -31,14 +31,6 @@
                         </p>
                     </a>
 
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                        <a href="loan-Home" class="nav-link">
-                            <i class="fa fa-folder" aria-hidden="true"></i>
-                                <p>Home</p>
-                            </a>
-                        </li>
-                    </ul>
 
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
