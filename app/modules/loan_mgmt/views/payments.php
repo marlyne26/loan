@@ -396,16 +396,12 @@
 
     $("#btn-addPayment").click(
         function addPayment() {
-            //getting the textfield id and assigning it to a variable
             var refNum = document.getElementById('referenceNumber').value;
-            //getting the textfield id and assigning it to a variable
             var amount = document.getElementById('amount').value;
-            //getting the textfield id and assigning it to a variable
             var payee = document.getElementById('payeeName').value;
-
-            //Check if any of the fields is empty (Validation)
+            
             if (refNum === '' || amount === '' || payee === '') {
-                //Print an error message
+        
                 alert('All fields are compulsory. Please fill in all the areas.');
            
             }
