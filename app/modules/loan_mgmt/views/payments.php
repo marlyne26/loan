@@ -24,7 +24,7 @@
                                 PAYMENT LIST
                             </div>
                             <span class="float-right">
-                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-lg"> <i class="fa fa-circle-thin"> <i class="fa fa-plus"></i> </i>New Payment</button>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-lg"> <i class="fa fa-circle-thin"> <i class="fa fa-plus"></i></i>New Payment</button>
                             </span>
                             <div class="modal fade" id="modal-lg">
                                 <div class="modal-dialog modal-lg">
@@ -47,7 +47,7 @@
                     <div class="col-md-10">
                         <div class="form-group">
                             <label for="CategoryLevels">Reference Number</label>
-                            <select class="form-control js-example-basic-multiple" id="CategoryLevels">
+                            <select class="form-control js-example-basic-multiple" id="CategoryLevels" required>
                             </select>
 
                         </div>
@@ -68,8 +68,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="ResolutionLevel1">Amount</label>
-                            <input type="number" id="ResolutionLevel1" class="form-control" autocomplete="off" required>
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" class="form-control" autocomplete="off" required>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
         </div>
         <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="AddCategory">Save</button>
+            <button type="button" class="btn btn-primary" id="btn-addPayment">Save</button>
         </div>
     </div>
 </div>
@@ -394,41 +394,10 @@
 
     });
 
-    $("#AddCategory").click(function() {
-        debugger;
-        underCategoryID = $("#cat-" + (parseInt($("#CategoryLevels").val()) - 1) + " :selected").val();
-        let obj = {};
-        obj.Module = "SupportTicket";
-        obj.Page_key = "addGrievanceCategory";
-        let json = {};
-        json.GrievanceCategory = $("#GrievanceCategory").val();
-        json.CategoryLevel = $("#CategoryLevels").val();
-        json.UnderCategoryID = underCategoryID;
-        json.ResolutionLevel1 = $("#ResolutionLevel1").val();
-        json.ResolutionLevel2 = $("#ResolutionLevel2").val();
-        json.ResolutionLevel3 = $("#ResolutionLevel3").val();
-        obj.JSON = json;
-
-        if (selectedLevel == 0) {
-            if ($("#GrievanceCategory").val() == '' || $("#ResolutionLevel1").val() == '' || $("#ResolutionLevel2")
-                .val() == '' || $("#ResolutionLevel3").val() == '' || $("#CategoryLevels").val() == '' || $(
-                    "#UnderCategoryIds").val() == '') { //check empty fields
-                notify("error", "All Fields are Required");
-                return;
-            } else {
-                TransportCall(obj);
-            }
-        } else if ($("#GrievanceCategory").val() == '' || $("#ResolutionLevel1").val() == '' || $("#ResolutionLevel2")
-            .val() == '' || $("#ResolutionLevel3").val() == '' || $("#CategoryLevels").val() == '' || $(
-                "#UnderCategoryIds").val() == '') { //check empty fields
-            notify("error", "All Fields are Required");
-
-        } else if (underCategoryID == undefined || underCategoryID == -1) { //chances of under category -1 if there are no values or not selected
-            notify("error", "Select the Under Category");
-            return;
-        } else {
-            TransportCall(obj);
-        }
+    $("#btn-addPayment").click(function()
+      if(
+        
+      ) 
 
     });
 

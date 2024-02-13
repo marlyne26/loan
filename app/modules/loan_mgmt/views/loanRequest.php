@@ -46,7 +46,7 @@
                           <td>1.7</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                          <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default" fdprocessedid="tev01">Grant</button></td>
                         </tr>
                         <tr class="even">
                           <td class="dtr-control sorting_1" tabindex="0">Education</td>
@@ -55,7 +55,7 @@
                           <td>1.8</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Grant</button></a></td>
                         </tr>
                         <tr class="odd">
                           <td class="dtr-control sorting_1" tabindex="0">Land</td>
@@ -64,7 +64,7 @@
                           <td>1.8</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><a href="loan-checkLoanRequest"><button class="check-button">Check</button></a></td>
+                          <td><a href="loan-checkLoanRequest"><button class="check-button">Grant</button></a></td>
                         </tr>
                         <!-- Add more records as needed -->
                         <tr class="even">
