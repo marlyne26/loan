@@ -309,3 +309,63 @@
 14-02-24 10:11:56 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
  [] 
  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+15-02-24 09:31:55 : {"JSON":"","Page_key":""}
+
+15-02-24 09:31:56 : {"JSON":"","Page_key":""}
+
+15-02-24 09:31:56 : {"JSON":"","Page_key":""}
+
+15-02-24 09:32:03 : {"Module":"Auth","Page_key":"Login","JSON":{"Username":"admin","Password":"123"},"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 09:32:03 : Reached request Login
+
+15-02-24 09:32:03 : {"JSON":"","Page_key":""}
+
+15-02-24 09:32:09 : {"JSON":"","Page_key":""}
+
+15-02-24 09:32:10 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 09:32:10 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 09:32:10 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 09:32:10 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+15-02-24 09:32:10 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 09:32:10 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+15-02-24 10:06:58 : {"JSON":"","Page_key":""}
+
+15-02-24 10:06:58 : {"Module":"SupportTicket","Page_key":"getAllCategoryLevel","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 10:06:58 : {"Module":"SupportTicket","Page_key":"getCategoryList","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 10:06:58 : {"Module":"Settings","Page_key":"getDepartment","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 10:06:58 : select grievance_category_department.*, grievance_category_department_staff .StaffID,GROUP_CONCAT(grievance_category_department_staff.StaffName) as StaffName ,GROUP_CONCAT(grievance_category_department_staff.StaffID) as StaffID from grievance_category_department INNER join grievance_category_department_staff on find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) where find_in_Set(grievance_category_department.DepartmentID,grievance_category_department_staff.DepartmentID) and grievance_category_department.isActive = 1 and grievance_category_department_staff.isRemoved = 0 GROUP by grievance_category_department.DepartmentID; 
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+15-02-24 10:06:58 : {"Module":"Settings","Page_key":"getDepartmentForAssignGrievanceCategory","JSON":[],"MSC":"9bf31c7ff062936a96d3c8bd1f8f2ff3"}
+
+15-02-24 10:06:58 : SELECT `DepartmentID`, `DepartmentName` FROM `Grievance_Category_Department` WHERE `isActive` = 1  
+ [] 
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loan_db.grievance_category_department' doesn't exist
+
+15-02-24 10:06:59 : {"JSON":"","Page_key":""}
+
+15-02-24 10:07:01 : {"JSON":"","Page_key":""}
+
+15-02-24 10:07:04 : {"JSON":"","Page_key":""}
+
+15-02-24 10:09:31 : {"JSON":"","Page_key":""}
+
+15-02-24 10:13:57 : {"JSON":"","Page_key":""}
+
+15-02-24 10:14:01 : {"JSON":"","Page_key":""}
