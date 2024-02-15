@@ -396,14 +396,18 @@
 
     $("#btn-addPayment").click(
         function addPayment() {
+            var refNum = document.getElementById('referenceNumber').value;
+            var amount = document.getElementById('amount').value;
+            var payee = document.getElementById('payeeName').value;
             $("#referenceNumber").val() =='';
-            $("#amount").val() =='';
-            $("#payeeName").val() =='';
 
-         // alert('All fields are compulsory. Please fill in all the areas.');
+            if (refNum === '' || amount === '' || payee === '') {
+        
+                // alert('All fields are compulsory. Please fill in all the areas.');
                 notify("error","Please fill all fields.");
             }
-          );
+        }
+    );
 
 
     function clearform() {
