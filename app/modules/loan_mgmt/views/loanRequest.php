@@ -6,14 +6,18 @@
     top: 10px;
     right: 10px;
     padding: 5px;
-    color: red; /* Set the color as desired */
+    color: red;
+    /* Set the color as desired */
   }
 
   /* Styling for the cross icon */
   .close-btn::before {
-    content: '\00D7'; /* Unicode for the multiplication (cross) symbol */
-    font-size: 20px; /* Adjust the font size as needed */
+    content: '\00D7';
+    /* Unicode for the multiplication (cross) symbol */
+    font-size: 20px;
+    /* Adjust the font size as needed */
   }
+
   .overlay {
     display: none;
     position: fixed;
@@ -42,7 +46,8 @@
     transition: transform 0.3s ease;
     padding: 10px;
     overflow-y: auto;
-    max-height: 70vh; /* Set maximum height */
+    max-height: 70vh;
+    /* Set maximum height */
   }
 
   /* Styling for the close button */
@@ -165,7 +170,9 @@
                           <td>1.8</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><button onclick="openModal()">Check</button></td>
+                          <td> 
+                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                          </td>
                         </tr>
                         <tr class="odd">
                           <td class="dtr-control sorting_1" tabindex="0">Land</td>
@@ -174,7 +181,9 @@
                           <td>1.8</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><button onclick="openModal()">Check</button< /td>
+                          <td>
+                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                          </td>
                         </tr>
                         <!-- Add more records as needed -->
                         <tr class="even">
@@ -184,7 +193,9 @@
                           <td>1.9</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><button onclick="openModal()">Check</button></td>
+                          <td>
+                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                          </td>
                         </tr>
                         <tr class="odd">
                           <td class="sorting_1 dtr-control">Personal</td>
@@ -193,7 +204,9 @@
                           <td>1.8</td>
                           <td>20</td>
                           <!-- New button in the "Action" column -->
-                          <td><button onclick="openModal()">Check</button< /td>
+                          <td>
+                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
