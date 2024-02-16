@@ -1,4 +1,22 @@
 <style>
+
+.modal-button {
+  background-color: #007bff; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
   /* Styling for the overlay */
   .close-btn {
     cursor: pointer;
@@ -38,13 +56,13 @@
     width: 60%;
     max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease;
-    padding: 10px;
+    padding: 0px;
     overflow-y: auto;
     max-height: 70vh;
     /* Set maximum height */
@@ -160,8 +178,7 @@
                           <td>20</td>
                           <!-- New button in the "Action" column -->
                           <td>
-                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
-                          </td>
+                          <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
                         </tr>
                         <tr class="even">
                           <td class="dtr-control sorting_1" tabindex="0">Education</td>
@@ -171,7 +188,7 @@
                           <td>20</td>
                           <!-- New button in the "Action" column -->
                           <td> 
-                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
                           </td>
                         </tr>
                         <tr class="odd">
@@ -182,7 +199,7 @@
                           <td>20</td>
                           <!-- New button in the "Action" column -->
                           <td>
-                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
                           </td>
                         </tr>
                         <!-- Add more records as needed -->
@@ -194,7 +211,7 @@
                           <td>20</td>
                           <!-- New button in the "Action" column -->
                           <td>
-                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
                           </td>
                         </tr>
                         <tr class="odd">
@@ -205,7 +222,7 @@
                           <td>20</td>
                           <!-- New button in the "Action" column -->
                           <td>
-                            <button data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>
+                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
                           </td>
                         </tr>
                       </tbody>
@@ -234,46 +251,45 @@
         </div>
       </div>
     </div>
-    //Check pop up model
+
   </section>
 </div>
 <div class="overlay" id="overlay">
   <div class="modal" id="modal">
-    <button class="close-btn" onclick="closeModal">&times;</button>
+    <button class="close-btn" onclick="closeModal()">&times;</button>
     <!-- Display column names and row content dynamically here -->
     <div id="modal-content" class="modal-content"></div>
     <!-- Action buttons -->
     <div class="action-buttons">
       <button class="accept-btn">Accept Loan</button>
       <button class="reject-btn">Reject Loan</button>
-    </div>
+  </div>
   </div>
 </div>
 
+  <script>
+      function openModal(button) {
+        // Show the overlay and modal
+        document.getElementById('overlay').style.display = 'flex';
+        document.getElementById('modal').style.display = 'block';
 
-<script>
-  function openModal(button) {
-    // Show the overlay and modal
-    document.getElementById('overlay').style.display = 'flex';
-    document.getElementById('modal').style.display = 'block';
+        // Get the corresponding row of the clicked button
+        var row = button.closest('tr');
 
-    // Get the corresponding row of the clicked button
-    var row = button.closest('tr');
+        // Create a table to display column names and row content
+        var content = '';
+        for (var i = 0; i < row.cells.length - 1; i++) { // Exclude the last cell with the button
+          content += '<div class="column-names">' + row.closest('table').rows[0].cells[i].textContent + ':</div>';
+          content += '<div>' + row.cells[i].textContent + '</div>';
+        }
 
-    // Create a table to display column names and row content
-    var content = '';
-    for (var i = 0; i < row.cells.length - 1; i++) { // Exclude the last cell with the button
-      content += '<div class="column-names">' + row.closest('table').rows[0].cells[i].textContent + ':</div>';
-      content += '<div>' + row.cells[i].textContent + '</div>';
-    }
+        // Display the content in the modal
+        document.getElementById('modal-content').innerHTML = content;
+      }
 
-    // Display the content in the modal
-    document.getElementById('modal-content').innerHTML = content;
-  }
-
-  function closeModal() {
-    // Hide the overlay and modal
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('modal').style.display = 'none';
-  }
-</script>
+      function closeModal() {
+        // Hide the overlay and modal
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('modal').style.display = 'none';
+      }
+    </script>
