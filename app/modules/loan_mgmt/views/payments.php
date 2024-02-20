@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="assets/admin/plugins/summernote/summernote-bs4.css">
-<link rel="stylesheet" href="assets/admin/plugins/multi-select-dropdown-list-with-checkbox-jquery/jquery.multiselect.css">
+<link rel="stylesheet"
+    href="assets/admin/plugins/multi-select-dropdown-list-with-checkbox-jquery/jquery.multiselect.css">
 <link rel="stylesheet" href="assets/admin/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css">
 <style>
     .customtext {
@@ -24,7 +25,8 @@
                                 PAYMENT LIST
                             </div>
                             <span class="float-right">
-                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-lg"> <i class="fa fa-circle-thin"> <i class="fa fa-plus"></i></i>New Payment</button>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-lg"> <i
+                                        class="fa fa-circle-thin"> <i class="fa fa-plus"></i></i>New Payment</button>
                             </span>
                             <div class="modal fade" id="modal-lg">
                                 <div class="modal-dialog modal-lg">
@@ -32,7 +34,8 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h4 class="modal-title">Payment Form</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
                                                     <span aria-hidden="true">×</span>
                                                 </button>
                                             </div>
@@ -47,14 +50,17 @@
                                                         <div class="col-md-10">
                                                             <div class="form-group">
                                                                 <label for="CategoryLevels">Reference Number</label>
-                                                                <select class="form-control js-example-basic-multiple" id="referenceNumber" required>
+                                                                <select class="form-control js-example-basic-multiple"
+                                                                    id="referenceNumber" required>
                                                                 </select>
 
                                                             </div>
 
                                                             <div class="form-group">
                                                                 <label for="productModule">Payee</label>
-                                                                <input type="text" id="payeeName" class="form-control" placeholder="Payee Name" autocomplete="off" required>
+                                                                <input type="text" id="payeeName" class="form-control"
+                                                                    placeholder="Payee Name" autocomplete="off"
+                                                                    required>
                                                             </div>
 
                                                         </div>
@@ -69,15 +75,18 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="amount">Amount</label>
-                                                                <input type="number" id="amount" class="form-control" autocomplete="off" required>
+                                                                <input type="number" id="amount" class="form-control"
+                                                                    autocomplete="off" required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer justify-content-between">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary" id="btn-addPayment">Save</button>
+                                                <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary"
+                                                    id="btn-addPayment">Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -114,14 +123,17 @@
                                     <div class="modal-header">
                                         <h4 class="modal-title"> Department List </h4>
                                         <span class="float-right">
-                                            <button class="btn btn-success" data-toggle="modal" data-target="#add-department"> <i class="fa fa-circle-thin"> <i class="fa fa-plus"></i> </i>Add Department</button>
+                                            <button class="btn btn-success" data-toggle="modal"
+                                                data-target="#add-department"> <i class="fa fa-circle-thin"> <i
+                                                        class="fa fa-plus"></i> </i>Add Department</button>
                                         </span>
                                     </div>
                                     <div class="modal-body">
                                         <div class="card-body text-center">
                                             <div class="row">
                                                 <div class="card-body">
-                                                    <table id="departmenttable" class="table table-bordered table-striped" style="width: 100%;">
+                                                    <table id="departmenttable"
+                                                        class="table table-bordered table-striped" style="width: 100%;">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col">Department Name</th>
@@ -135,7 +147,8 @@
                                             </div>
                                             <div class="card-body text-center">
                                             </div>
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +168,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="getdepartmentlist">Select Department</label>
-                                                        <select id="getdepartmentlist" class="form-control js-example-basic-multiple" name="">
+                                                        <select id="getdepartmentlist"
+                                                            class="form-control js-example-basic-multiple" name="">
                                                         </select>
                                                     </div>
                                                 </div>
@@ -163,7 +177,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="getstaffs">Select Staff</label>
-                                                        <select id="getstaffs" class="form-control js-example-basic-multiple" multiple>
+                                                        <select id="getstaffs"
+                                                            class="form-control js-example-basic-multiple" multiple>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -172,8 +187,10 @@
                                     </div>
                                     <!-- /.modal-content -->
                                     <div class="modal-footer justify-content-between">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" onclick="AssignGrievanceCategory()">Assign </button>
+                                        <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary"
+                                            onclick="AssignGrievanceCategory()">Assign </button>
                                     </div>
                                 </div>
                             </div>
@@ -193,13 +210,17 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="server_name">Department Code:</label>
-                                                            <input type="text" id="deptCode" class="form-control" placeholder="Department Code.." autocomplete="off" required>
+                                                            <input type="text" id="deptCode" class="form-control"
+                                                                placeholder="Department Code.." autocomplete="off"
+                                                                required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="ip_address">Department Name:</label>
-                                                            <input type="text" id="deptName" class="form-control" placeholder="Department Name.." autocomplete="off" required>
+                                                            <input type="text" id="deptName" class="form-control"
+                                                                placeholder="Department Name.." autocomplete="off"
+                                                                required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -208,8 +229,10 @@
 
                                             </div>
                                             <div class="modal-footer justify-content-between">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary" id="btnAddDept">Save</button>
+                                                <button type="button" class="btn btn-default"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary"
+                                                    id="btnAddDept">Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -237,7 +260,7 @@
 <script type="text/javascript">
 </script>
 <script>
-    $(function() {
+    $(function () {
         getCategoryLevel();
         getCategoryList();
         getDepartment();
@@ -269,10 +292,13 @@
 
     function onSuccess(rc) {
         if (rc.return_code) {
+            debugger;
             switch (rc.Page_key) {
 
-                case "getAllCategoryLevel":
-                    loadSelect("#CategoryLevels", rc.return_data);
+                case "addNewPayment": 
+                    debugger;
+                    alert("Error");
+                //    notify("success","Success");
                     break;
 
                 case "getZeroLevelCategory":
@@ -316,7 +342,7 @@
 
                     // Append to the element with ID "subcategory"
                     $("#subcategory").empty().append(text);
-                    $('.categorySelect').change(function() {
+                    $('.categorySelect').change(function () {
                         nextCat = parseInt($(this).attr("data-level")) + 1;
                         getNextLevelCategory('#cat-' + nextCat, this.value)
                     });
@@ -358,11 +384,11 @@
                     $('#delbtn' + staffid_var).remove();
                     break;
 
-                    // Declare selectedDepartmentID in a broader scope
+                // Declare selectedDepartmentID in a broader scope
                 case "getDepartmentForAssignGrievanceCategory":
                     var selectedDepartmentID;
                     loadSelect("#getdepartmentlist", rc.return_data);
-                    $('#getdepartmentlist').on('change', function() {
+                    $('#getdepartmentlist').on('change', function () {
                         selectedDepartmentID = $(this).val(); // Assign value to selectedDepartmentID
                         getEmployeeByDepartmentID(selectedDepartmentID);
                     });
@@ -372,7 +398,7 @@
                     var selectedStaffsID = null;
                     // Here, you can use selectedDepartmentID
                     loadSelect("#getstaffs", rc.return_data);
-                    $('#getstaffs').on('change', function() {
+                    $('#getstaffs').on('change', function () {
                         selectedStaffsID = $(this).val();
 
                     });
@@ -388,7 +414,7 @@
 
 
     var selectedLevel = "";
-    $('#CategoryLevels').on('change', function() {
+    $('#CategoryLevels').on('change', function () {
         selectedLevel = $("#CategoryLevels").val();
         getZeroLevelCategory(selectedLevel);
 
@@ -396,15 +422,23 @@
 
     $("#btn-addPayment").click(
         function addPayment() {
-            var refNum = document.getElementById('referenceNumber').value;
-            var amount = document.getElementById('amount').value;
-            var payee = document.getElementById('payeeName').value;
-            $("#referenceNumber").val() == '';
-
-            if (refNum === '' || amount === '' || payee === '') {
+            debugger;
+            let obj = {};
+            obj.Module = "Loan";
+            obj.Page_key = "addNewPayment";
+            let json = {};
+            json.referenceNumber = $("#referenceNumber").val();
+            json.payeeName = $("#payeeName").val();
+            json.amount = $("#amount").val();
+            obj.JSON = json;
+            console.log(JSON.stringify(obj));
+            if (amount === '' || payeeName === '') {
 
                 // alert('All fields are compulsory. Please fill in all the areas.');
                 notify("error", "Please fill all fields.");
+            }
+            else {
+                TransportCall(obj);
             }
         }
     );
@@ -421,7 +455,6 @@
 
 
     function getCategoryList() {
-
         var obj = new Object();
         obj.Module = "SupportTicket";
         obj.Page_key = "getCategoryList";
@@ -459,7 +492,7 @@
 
     }
 
-    $("#btnAddDept").click(function() {
+    $("#btnAddDept").click(function () {
         let obj = {};
         obj.Module = "Settings";
         obj.Page_key = "addDepartment";
@@ -590,7 +623,7 @@
             if ($.fn.DataTable.isDataTable($(table))) {
                 $(table).DataTable().destroy();
             }
-        } catch (ex) {}
+        } catch (ex) { }
 
         var text = "";
 
@@ -639,29 +672,29 @@
             "deferRender": true,
             "pageLength": 10,
             buttons: [{
-                    exportOptions: {
-                        columns: ':not(.hidden-col)'
-                    },
-                    extend: 'excel',
-                    orientation: 'landscape',
-                    pageSize: 'A4'
+                exportOptions: {
+                    columns: ':not(.hidden-col)'
                 },
-                {
-                    exportOptions: {
-                        columns: ':not(.hidden-col)'
-                    },
-                    extend: 'pdfHtml5',
-                    orientation: 'landscape',
-                    pageSize: 'A4'
+                extend: 'excel',
+                orientation: 'landscape',
+                pageSize: 'A4'
+            },
+            {
+                exportOptions: {
+                    columns: ':not(.hidden-col)'
                 },
-                {
-                    exportOptions: {
-                        columns: ':not(.hidden-col)'
-                    },
-                    extend: 'print',
-                    orientation: 'landscape',
-                    pageSize: 'A4'
-                }
+                extend: 'pdfHtml5',
+                orientation: 'landscape',
+                pageSize: 'A4'
+            },
+            {
+                exportOptions: {
+                    columns: ':not(.hidden-col)'
+                },
+                extend: 'print',
+                orientation: 'landscape',
+                pageSize: 'A4'
+            }
             ]
         });
     }
@@ -722,7 +755,7 @@
             if ($.fn.DataTable.isDataTable($(table))) {
                 $(table).DataTable().destroy();
             }
-        } catch (ex) {}
+        } catch (ex) { }
 
         var text = ""
         for (let i = 0; i < data.length; i++) {
@@ -758,36 +791,36 @@
             "deferRender": true,
             "pageLength": 10,
             buttons: [{
-                    exportOptions: {
-                        columns: ':not(.hidden-col)'
-                    },
-                    extend: 'excel',
-                    orientation: 'landscape',
-                    pageSize: 'A4'
+                exportOptions: {
+                    columns: ':not(.hidden-col)'
                 },
-                {
-                    exportOptions: {
-                        columns: ':not(.hidden-col)'
-                    },
-                    extend: 'pdfHtml5',
-                    orientation: 'landscape',
-                    pageSize: 'A4'
+                extend: 'excel',
+                orientation: 'landscape',
+                pageSize: 'A4'
+            },
+            {
+                exportOptions: {
+                    columns: ':not(.hidden-col)'
                 },
-                {
-                    exportOptions: {
-                        columns: ':not(.hidden-col)'
-                    },
-                    extend: 'print',
-                    orientation: 'landscape',
-                    pageSize: 'A4'
-                }
+                extend: 'pdfHtml5',
+                orientation: 'landscape',
+                pageSize: 'A4'
+            },
+            {
+                exportOptions: {
+                    columns: ':not(.hidden-col)'
+                },
+                extend: 'print',
+                orientation: 'landscape',
+                pageSize: 'A4'
+            }
             ]
         });
     }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.js-example-basic-multiple').select2();
     });
 </script>

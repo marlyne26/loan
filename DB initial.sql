@@ -35,6 +35,12 @@ CREATE TABLE `users` (
   `SessionID` tinyint(4) NOT NULL
 );
 
+CREATE TABLE `payment` (
+  `RefNum` bigint(20) NOT NULL,
+  `Payee` varchar(20) NOT NULL,
+  `Amount` int(11) NOT NULL
+);
+
 INSERT INTO `users` (`UserID`, `Name`, `Username`, `Password`, `EmailID`, `ContactNo`, `UserType`, `StaffID`, `isActive`, `CreatedDateTime`, `FCMToken`, `SessionID`) VALUES
 (1, 'Administrator', 'admin', '7c04837eb356565e28bb14e5a1dedb240a5ac2561f8ed318c54a279fb6a9665e', 'admin@techz.in', '8794151912', 1, NULL, b'1', '2021-11-23 03:38:06', NULL, 1),
 

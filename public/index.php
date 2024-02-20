@@ -127,6 +127,15 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
                 break;
 
 
+                case "Loan": //added by dev on 19/01/24
+                    $result = (new LoanController())->Route($data);
+                    break;
+    
+    
+                    
+
+
+
             default:
                 $result = array("return_code" => false, "return_data" => array("Module key not found"));
                 session_destroy();

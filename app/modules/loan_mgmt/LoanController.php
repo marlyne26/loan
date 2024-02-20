@@ -1,6 +1,7 @@
 <?php
 
 namespace app\modules\loan_mgmt;
+use app\modules\loan_mgmt\classes\Loan;
 use app\core\Controller;
 use app\database\DBController;
 
@@ -8,6 +9,26 @@ class LoanController implements Controller{
 
     public function Route($data)
     {
+
+        $jsondata = $data["JSON"];
+
+        switch ($data["Page_key"]) {
+          
+            case 'addNewPayment':
+
+                return (new Loan())->addNewPayment($jsondata);
+
+            // case "getDataFromAPI":
+            //      return (new Support())->getDataFromAPI($jsondata);
+
+
+            default:
+                header('HTTP/1.1 401  Unauthorized Access');
+                header("Status: 401 ");
+                session_destroy();
+                return array("return_code" => false, "return_data" => array("Page Key not found"));
+        }
+
     }
 
     static function Views($page)
