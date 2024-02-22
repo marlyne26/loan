@@ -21,11 +21,11 @@ class Loan
             array(":Amount",$data['amount']),
         );
         //save the product
-        $query="INSERT INTO `payment`( `RefNum`, `Payee`,`Amount`) VALUES (:ReferenceNumber,:PayeeName,:Amount);";
+        $query="INSERT INTO `Payment`( `RefNum`, `Payee`,`Amount`) VALUES (:ReferenceNumber,:PayeeName,:Amount);";
         //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
         $res=DBController::ExecuteSQL($query,$params);
          if($res){
-            return array("return_code" => true, "return_data"=>"States added successfully");  
+            return array("return_code" => true, "return_data"=>"Payment successful");  
          }
          return array("return_code" => false, "return_data" => "Error payment");  
     }

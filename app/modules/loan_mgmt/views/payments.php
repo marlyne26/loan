@@ -297,8 +297,8 @@
 
                 case "addNewPayment": 
                     debugger;
-                    alert("Error");
-                //    notify("success","Success");
+                    
+                    notify("success",rc.return_data);
                     break;
 
                 case "getZeroLevelCategory":
@@ -421,7 +421,7 @@
     });
 
     $("#btn-addPayment").click(
-        function addPayment() {
+        function() {
             debugger;
             let obj = {};
             obj.Module = "Loan";
