@@ -65,6 +65,11 @@ class LoanController implements Controller{
             case "bankStatement":
                 load($viewpath . "bankStatement.php");
                 break; 
+
+            case "manageBorrowers":
+                load($viewpath . "manageBorrowers.php");
+                break; 
+            
             
             // case 'viewLoan':
             //     load($viewpath . "viewLoan/viewLoan.php");
