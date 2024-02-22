@@ -60,6 +60,16 @@
                     </ul>
                 </li>
             
+                <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="loan-manageBorrowers" class="nav-link">
+                                <i class="fa fa-users"></i>
+                                <p>Borrowers</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            
                 <!-- support -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
