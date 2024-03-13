@@ -68,13 +68,12 @@ class Loan
    {
       //prepare array 
       $params = array(
-         array(":BorrowerID", $data["BorrowerID"]),
          array(":BorrowerName", $data["BorrowerName"]),
          array(":LoanType", $data['LoanType']),
          array(":Duration", $data['Duration']),
          array(":Amount", $data['amount']),
       );
-      $query = "INSERT INTO `Borrower`(`BorrowerID`, `Name`,`LoanType`,`Duration`,`Amount`) VALUES (:BorrowerID,:BorrowerName,:LoanType,:Duration,:Amount);";
+      $query = "INSERT INTO `Borrower`(`Name`,`LoanType`,`Duration`,`Amount`) VALUES (:BorrowerName,:LoanType,:Duration,:Amount);";
       //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
       $res = DBController::ExecuteSQL($query, $params);
       if ($res) {

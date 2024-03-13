@@ -83,17 +83,11 @@
                                                     </div>
 
                                                     <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Duration">Duration</label>
-                                                                <div class="input-group">                                                                    <input type="number" id="Duration"class="form-control" autocomplete="off" required>
-                                                                    <select class="custom-select" id="DurationUnit">
-                                                                        <option value="years">Year(s)</option>
-                                                                        <option value="months">Month(s)</option>
-                                                                    </select>
-                                                                </div>
+                                                        <div class="col-md-4">
+                                                        <div class="form-group">
+                                                                <label for="Duration">Duration(Months)</label>
+                                                                <input type="number" id="Duration" class="form-control" autocomplete="off" required>
                                                             </div>
-
                                                         </div>
                                                     </div>
 
