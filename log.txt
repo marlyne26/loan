@@ -35,3 +35,57 @@
 12-03-24 05:32:03 : {"JSON":"","Page_key":""}
 
 12-03-24 05:32:03 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"c20ad4d76fe97759aa27a0c99bff6710"}
+
+13-03-24 03:29:26 : {"JSON":"","Page_key":""}
+
+13-03-24 03:29:26 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+
+13-03-24 03:29:29 : {"JSON":"","Page_key":""}
+
+13-03-24 03:31:36 : {"JSON":"","Page_key":""}
+
+13-03-24 03:32:10 : {"JSON":"","Page_key":""}
+
+13-03-24 03:33:00 : {"JSON":"","Page_key":""}
+
+13-03-24 03:36:39 : {"JSON":"","Page_key":""}
+
+13-03-24 03:36:40 : {"JSON":"","Page_key":""}
+
+13-03-24 03:43:44 : {"JSON":"","Page_key":""}
+
+13-03-24 03:44:15 : {"JSON":"","Page_key":""}
+
+13-03-24 03:44:33 : {"JSON":"","Page_key":""}
+
+13-03-24 03:45:34 : {"JSON":"","Page_key":""}
+
+13-03-24 03:45:44 : {"JSON":"","Page_key":""}
+
+13-03-24 03:46:03 : {"JSON":"","Page_key":""}
+
+13-03-24 03:46:15 : {"JSON":"","Page_key":""}
+
+13-03-24 03:46:26 : {"JSON":"","Page_key":""}
+
+13-03-24 03:46:34 : {"JSON":"","Page_key":""}
+
+13-03-24 03:56:58 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"Marlyne Ibadahun Binan Songthiang","LoanType":"Education Loan","Duration":"2","amount":"300000"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+
+13-03-24 03:56:58 : Unknown error type: [2] Undefined array key &quot;BorrowerID&quot;<br />
+  Fatal error on line 71 in file C:\wamp64\www\loan\app\modules\loan_mgmt\classes\Loan.php
+Aborting...<br />
+
+
+13-03-24 03:57:24 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"Marlyne Ibadahun Binan Songthiang","LoanType":"Education Loan","Duration":"2","amount":"300000"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+
+13-03-24 03:57:24 : Unknown error type: [2] Undefined array key &quot;BorrowerID&quot;<br />
+  Fatal error on line 71 in file C:\wamp64\www\loan\app\modules\loan_mgmt\classes\Loan.php
+Aborting...<br />
+
+
+13-03-24 04:08:30 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"Marlyne Ibadahun Binan Songthiang","LoanType":"Education Loan","Duration":"2","amount":"300000"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+
+13-03-24 04:08:30 : Unknown error type: [2] Undefined array key &quot;BorrowerID&quot;<br />
+  Fatal error on line 71 in file C:\wamp64\www\loan\app\modules\loan_mgmt\classes\Loan.php
+Aborting...<br />

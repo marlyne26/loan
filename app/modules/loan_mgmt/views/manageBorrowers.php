@@ -48,19 +48,12 @@
 
                                                         <!-- inputField -->
                                                         <div class="col-md-10">
-                                                            <div class="form-group">
-                                                                <label for="BorrowerID">Borrower ID</label>
-                                                                <input type="text" id="BorrowerID" class="form-control"
-                                                                    placeholder="Borrower ID" autocomplete="off"
-                                                                    required>
-
-                                                            </div>
 
                                                             <div class="form-group">
                                                                 <label for="BorrowerName">Name</label>
-                                                                <input type="text" id="BorrowerName" class="form-control"
-                                                                    placeholder="Borrower Name" autocomplete="off"
-                                                                    required>
+                                                                <input type="text" id="BorrowerName"
+                                                                    class="form-control" placeholder="Borrower Name"
+                                                                    autocomplete="off" required>
                                                             </div>
 
                                                         </div>
@@ -72,22 +65,35 @@
                                                     </div>
 
                                                     <div class="row">
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <label for="LoanType">Loan Type</label>
-                                                                <input type="number" id="LoanType" class="form-control"
+                                                                <select id="LoanType" class="form-control"
                                                                     autocomplete="off" required>
+                                                                    <option value="SelectLoanType">Select Loan Type</option>
+                                                                    <option value="Housing Loan">Housing Loan</option>
+                                                                    <option value="Education Loan">Education Loan</option>
+                                                                    <option value="Land Loan">Land Loan</option>
+                                                                    <option value="Car Loan">Car Loan</option>
+                                                                    <option value="Personal Loan">Personal Loan</option>
+                                                                </select>
                                                             </div>
+
                                                         </div>
                                                     </div>
 
                                                     <div class="row">
-                                                        <div class="col-md-4">
+                                                        <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <label for="Duration">Duration</label>
-                                                                <input type="number" id="Duration" class="form-control"
-                                                                    autocomplete="off" required>
+                                                                <div class="input-group">                                                                    <input type="number" id="Duration"class="form-control" autocomplete="off" required>
+                                                                    <select class="custom-select" id="DurationUnit">
+                                                                        <option value="years">Year(s)</option>
+                                                                        <option value="months">Month(s)</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
+
                                                         </div>
                                                     </div>
 
@@ -136,133 +142,7 @@
                         <!-- /.card-body -->
 
 
-                        <div class="modal fade" id="showdepartment-list">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title"> Department List </h4>
-                                        <span class="float-right">
-                                            <button class="btn btn-success" data-toggle="modal"
-                                                data-target="#add-department"> <i class="fa fa-circle-thin"> <i
-                                                        class="fa fa-plus"></i> </i>Add Department</button>
-                                        </span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card-body text-center">
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <table id="departmenttable"
-                                                        class="table table-bordered table-striped" style="width: 100%;">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">Department Name</th>
-                                                                <th scope="col">Employee Name</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div class="card-body text-center">
-                                            </div>
-                                            <button type="button" class="btn btn-default"
-                                                data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.modal-content -->
-                            </div>
-                        </div>
-                        <!-- Assign Category Grievances to Department -->
-                        <div class="modal fade" id="getdepartment-list">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Assign Grievance Category</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card-body text-center">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="getdepartmentlist">Select Department</label>
-                                                        <select id="getdepartmentlist"
-                                                            class="form-control js-example-basic-multiple" name="">
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <!-- inputField -->
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="getstaffs">Select Staff</label>
-                                                        <select id="getstaffs"
-                                                            class="form-control js-example-basic-multiple" multiple>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                    <div class="modal-footer justify-content-between">
-                                        <button type="button" class="btn btn-default"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary"
-                                            onclick="AssignGrievanceCategory()">Assign </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- add department form -->
-                            <div class="modal fade" id="add-department">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Add New Department </h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="card-body text-center">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="server_name">Department Code:</label>
-                                                            <input type="text" id="deptCode" class="form-control"
-                                                                placeholder="Department Code.." autocomplete="off"
-                                                                required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="ip_address">Department Name:</label>
-                                                            <input type="text" id="deptName" class="form-control"
-                                                                placeholder="Department Name.." autocomplete="off"
-                                                                required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body text-center">
-
-                                            </div>
-                                            <div class="modal-footer justify-content-between">
-                                                <button type="button" class="btn btn-default"
-                                                    data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary"
-                                                    id="btnAddDept">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- /.modal-content -->
-                            </div>
-                            <!-- Assign Category Grievances to Department ends here -->
-                        </div>
-                    </div>
-
+                       
 
                     <!-- /.row -->
                 </div>
@@ -309,7 +189,7 @@
                     break;
 
 
-               
+
             }
         }
     }
@@ -330,7 +210,7 @@
             json.amount = $("#amount").val();
             obj.JSON = json;
             console.log(JSON.stringify(obj));
-            if (  $("#BorrowerName").val() == '') {
+            if ($("#BorrowerName").val() == '') {
 
                 // alert('All fields are compulsory. Please fill in all the areas.');
                 notify("error", "Please fill all fields.");
