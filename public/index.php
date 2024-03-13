@@ -48,19 +48,7 @@ use app\database\DBController;
 use app\misc\IPLogger;
 use app\misc\MSC;
 use app\modules\auth\AuthenticationController;
-use app\modules\auth\classes\Password;
-use app\modules\careers\CareerController;
-use app\modules\clients\ClientController;
-use app\modules\filemanager\FileController;
-use app\modules\products\ProductsController;
-use app\modules\settings\SettingController;
-use app\modules\staff\StaffController; //added by dev on 19/01/24
-//newly added
 use app\modules\loan_mgmt\LoanController;
-use app\modules\supports\SupportController;
-use app\modules\supportTicket\classes\SupportTicket;
-use app\modules\supportTicket\SupportTicketController;
-use Exception;
 
 
 
@@ -98,36 +86,12 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
 
         switch ($data["Module"]) {
 
-            case "Settings":
-                $result = (new SettingController())->Route($data);
-                break;
-
-            case "Client":
-                $result = (new ClientController())->Route($data);
-                break;
-            case "Products":
-                $result = (new ProductsController())->Route($data);
-                break;
-
+            
             case "Auth":
                 $result = (new AuthenticationController())->Route($data);
                 break;
 
-            case "Careers":
-                $result = (new CareerController())->Route($data);
-                break;
-
-
-            case "SupportTicket":
-                $result = (new SupportTicketController())->Route($data);
-                break;
-
-            case "Staff": //added by dev on 19/01/24
-                $result = (new StaffController())->Route($data);
-                break;
-
-
-                case "Loan": //added by dev on 19/01/24
+                case "Loan":
                     $result = (new LoanController())->Route($data);
                     break;
     
@@ -150,9 +114,6 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
 
         switch ($data["Module"]) {
 
-            case "Careers":
-                $result = (new CareerController())->Route($data);
-                break;
 
             case "Auth":
 
@@ -189,46 +150,16 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
 
     switch ($page[0]) {
 
-        case "":
+    
         case "dashboard":
             load(VIEWPATH . "/dashboard.php");
             break;
 
-        case "clients":
-            ClientController::Views($page);
-            break;
-        case "products":
-            ProductsController::Views($page);
-            break;
-        case "file":
-            FileController::File();
-            break;
-
-        case "settings":
-            SettingController::Views($page);
-            break;
-
-        case "careers":
-            CareerController::Views($page);
-            break;
 
         case "changepassword":
             load("../app/views/admin/changepassword.php");
             break;
-
-
-        case "supports":
-            SupportController::Views($page);
-            break;
-            
-        case "supportTicket":
-            SupportTicketController::Views($page);
-            break;
-
-        case "staff":
-            StaffController::Views($page); //added by dev on 19/01/24
-            break;
-
+        
         case "loan":
             LoanController::Views(($page));
             break;
@@ -237,7 +168,6 @@ if (isset($data["Module"]) && isset($data["Page_key"]) && isset($data["JSON"]) &
             session_destroy();
             header('Location: login');
             ob_end_flush();
-            exit;
             break;
 
         default:
@@ -295,9 +225,6 @@ function publicRequest($query_array)
                 load(VIEWPATH . "/test.php");
                 break;
 
-            case "file":
-                FileController::File();
-                break;
 
             case "website-home":
                 load(VIEWPATH . "/website/home/home.php");
@@ -383,7 +310,6 @@ function myErrorHandler($errno, $errstr, $errfile, $errline)
 
             DBController::logs($errormessage);
             exit(1);
-            break;
     }
 
     DBController::logs($errormessage);

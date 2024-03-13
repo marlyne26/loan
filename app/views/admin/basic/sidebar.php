@@ -62,7 +62,7 @@
             
                 <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="loan-manageBorrowers" class="nav-link">
+                            <a href="loan-manageborrowers" class="nav-link">
                                 <i class="fa fa-users"></i>
                                 <p>Borrowers</p>
                             </a>
@@ -70,85 +70,7 @@
                     </ul>
                 </li>
             
-                <!-- support -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-wrench"></i>
-                        <p>
-                            Support
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="supports-support" class="nav-link">
-                                <i class="fa fa-key"></i>
-                                <p>Reset Password</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- settings -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fad fa-cogs"></i>
-                        <p>
-                            Settings
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="settings-prayagedulinks" class="nav-link">
-                                <i class="fas fa-school nav-icon"></i>
-                                <p>Prayagedu Links</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="settings-school" class="nav-link">
-                                <i class="fas fa-school nav-icon"></i>
-                                <p>School</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="changepassword" class="nav-link">
-                                <i class="fas fa-key nav-icon"></i>
-                                <p>Change Password</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="settings-state" class="nav-link">
-                                <i class="fas fa-plus nav-icon"></i>
-                                <p>Add State</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="settings-district" class="nav-link">
-                                <i class="fas fa-plus nav-icon"></i>
-                                <p>Add District</p>
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="settings-selectserver" class="nav-link">
-                           <i class="fas fa-server"></i>
-                              <p>Start Up Server</p>
-                            </a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="settings-addserver" class="nav-link">
-                                <i class="fas fa-server"></i>
-                                <p> Manage Server</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="settings-managedepartment" class="nav-link">
-                                <i class="fas fa-building"></i>
-                                <p> Manage Department</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+             
 
                 <!-- logout -->
                 <li>

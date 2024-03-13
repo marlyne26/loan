@@ -10,24 +10,88 @@ use app\misc\SMS;
 class Loan
 {
 
+   /* 
+     Current Version: 1.0.0
+     Created By: Devkanta,     dev1@techz.in
+     Created On: 
+     Modified By:
+     Modified On: 
+
+ */
+
+   function addNewPayment($data)
+   {
+      //prepare array 
+      $params = array(
+         array(":ReferenceNumber", $data["referenceNumber"]),
+         array(":PayeeName", $data["payeeName"]),
+         array(":Amount", $data['amount']),
+      );
 
 
-    function addNewPayment($data)
-    {
-       //prepare array 
-          $params=array(
-            array(":ReferenceNumber",$data["referenceNumber"]),
-            array(":PayeeName",$data["payeeName"]),
-            array(":Amount",$data['amount']),
-        );
-        //save the product
-        $query="INSERT INTO `Payment`( `RefNum`, `Payee`,`Amount`) VALUES (:ReferenceNumber,:PayeeName,:Amount);";
-        //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
-        $res=DBController::ExecuteSQL($query,$params);
-         if($res){
-            return array("return_code" => true, "return_data"=>"Payment successful");  
-         }
-         return array("return_code" => false, "return_data" => "Error payment");  
-    }
+      /*  Info: 
+          Description: For adding new payments
+              Created on : 07-03-2024 (Marlyn) : 
+              Modify on : 
+            
+          
+  
+      */
 
+
+      $query = "INSERT INTO `Payment`(`RefNum`, `Payee`,`Amount`) VALUES (:ReferenceNumber,:PayeeName,:Amount);";
+      //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
+      $res = DBController::ExecuteSQL($query, $params);
+      if ($res) {
+         return array("return_code" => true, "return_data" => "Payment successful");
+      }
+      return array("return_code" => false, "return_data" => "Error payment");
+   }
+
+
+
+
+   function getAllPayment($data)
+   {
+
+      $query = "SELECT * FROM `Payment`";
+      $res = DBController::getDataSet($query);
+      if ($res) {
+         return array("return_code" => true, "return_data" => $res);
+      }
+      return array("return_code" => false, "return_data" => "Error payment");
+
+
+   }
+
+   function addBorrower($data)
+   {
+      //prepare array 
+      $params = array(
+         array(":BorrowerID", $data["BorrowerID"]),
+         array(":BorrowerName", $data["BorrowerName"]),
+         array(":LoanType", $data['LoanType']),
+         array(":Duration", $data['Duration']),
+         array(":Amount", $data['amount']),
+      );
+      $query = "INSERT INTO `Borrower`(`BorrowerID`, `Name`,`LoanType`,`Duration`,`Amount`) VALUES (:BorrowerID,:BorrowerName,:LoanType,:Duration,:Amount);";
+      //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
+      $res = DBController::ExecuteSQL($query, $params);
+      if ($res) {
+         return array("return_code" => true, "return_data" => "Borrower Added");
+      }
+      return array("return_code" => false, "return_data" => "Error");
+   }
+   function getAllBorrower($data)
+   {
+
+      $query = "SELECT * FROM `Borrower`";
+      $res = DBController::getDataSet($query);
+      if ($res) {
+         return array("return_code" => true, "return_data" => $res);
+      }
+      return array("return_code" => false, "return_data" => "Error");
+
+
+   }
 }

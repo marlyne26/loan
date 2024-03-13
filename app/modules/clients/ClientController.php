@@ -32,36 +32,11 @@ class ClientController implements Controller
             case 'getAllServer':
                 return (new Server())->getAllServer($jsondata);
 
-            case 'getClient_subscription':
-                return (new Client())->getClient_subscription($jsondata);
 
             case 'deleteClientSubscription':
                 return (new Client())->deleteClientSubscription($jsondata);
 
-            case 'getExpiredClients':
-                return (new Client())->getExpiredClients($jsondata);
-
-            case 'getActiveClients':
-                return (new Client())->getActiveClients($jsondata);
-
-            case 'getUnsubscribeClients':
-                return (new Client())->getUnsubscribeClients($jsondata);
-
-            case 'getMostSubscribeProduct':
-                return (new Client())->getMostSubscribeProduct($jsondata);
-
-            case 'getMostSubscribeClients':
-                return (new Client())->getMostSubscribeClients($jsondata);
-
-            case 'clientAboutToExpired':
-                return (new Client())->clientAboutToExpired($jsondata);
-
-            case 'getDomainNameById':
-                return (new Client())->getDomainNameById($jsondata);    // added by dev on 26/10/23    
-
-            case 'getPrayageduLeads':
-                return (new Client())->getPrayageduLeads($jsondata);
-
+            
             case 'getClient_subscriptionById':
                 return (new Client())->getClient_subscriptionById($jsondata);
 

@@ -49,16 +49,16 @@
                                                         <!-- inputField -->
                                                         <div class="col-md-10">
                                                             <div class="form-group">
-                                                                <label for="CategoryLevels">Borrower ID</label>
-                                                                <select class="form-control js-example-basic-multiple"
-                                                                    id="referenceNumber" required>
-                                                                </select>
+                                                                <label for="BorrowerID">Borrower ID</label>
+                                                                <input type="text" id="BorrowerID" class="form-control"
+                                                                    placeholder="Borrower ID" autocomplete="off"
+                                                                    required>
 
                                                             </div>
 
                                                             <div class="form-group">
-                                                                <label for="productModule">Name</label>
-                                                                <input type="text" id="payeeName" class="form-control"
+                                                                <label for="BorrowerName">Name</label>
+                                                                <input type="text" id="BorrowerName" class="form-control"
                                                                     placeholder="Borrower Name" autocomplete="off"
                                                                     required>
                                                             </div>
@@ -74,7 +74,27 @@
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <label for="amount">Loan Type</label>
+                                                                <label for="LoanType">Loan Type</label>
+                                                                <input type="number" id="LoanType" class="form-control"
+                                                                    autocomplete="off" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="Duration">Duration</label>
+                                                                <input type="number" id="Duration" class="form-control"
+                                                                    autocomplete="off" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="amount">Amount</label>
                                                                 <input type="number" id="amount" class="form-control"
                                                                     autocomplete="off" required>
                                                             </div>
@@ -86,7 +106,7 @@
                                                 <button type="button" class="btn btn-default"
                                                     data-dismiss="modal">Close</button>
                                                 <button type="button" class="btn btn-primary"
-                                                    id="btn-addPayment">Save</button>
+                                                    id="btn-addBorrower">Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -105,8 +125,7 @@
                                         <th scope="col">Name </th>
                                         <th scope="col">Loan Type</th>
                                         <th scope="col">Duration</th>
-                                        <th scope="col">N/A</th>
-                                        <th>Action</th>
+                                        <th scope="col">Amount</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -261,178 +280,57 @@
 </script>
 <script>
     $(function () {
-        getCategoryLevel();
-        getCategoryList();
-        getDepartment();
-        getDepartmentForAssignGrievanceCategory();
+        getAllBorrower();
     });
 
-    function getCategoryLevel() {
+    function getAllBorrower() {
+        debugger;
         var obj = new Object();
-        obj.Module = "SupportTicket";
-        obj.Page_key = "getAllCategoryLevel";
+        obj.Module = "Loan";
+        obj.Page_key = "getAllBorrower";
         var json = new Object();
         obj.JSON = json;
-        TransportCall(obj);
+        // TransportCall(obj);
     }
-    var nextSelectID;
-
-    function getNextLevelCategory(selectid, UnderCategoryID) {
-        nextSelectID = selectid;
-        var obj = new Object();
-        obj.Module = "SupportTicket";
-        obj.Page_key = "getNextLevelCategory";
-        var json = new Object();
-        json.UnderCategoryID = UnderCategoryID;
-        json.NextSelectBoxID = selectid;
-        obj.JSON = json;
-        TransportCall(obj);
-
-    }
-
     function onSuccess(rc) {
         if (rc.return_code) {
-            debugger;
             switch (rc.Page_key) {
 
-                case "addNewPayment": 
-                    debugger;
-                    alert("Error");
-                //    notify("success","Success");
-                    break;
-
-                case "getZeroLevelCategory":
-                    var groupedData = {};
-                    var GrievanceCategoryID, GrievanceCategory, CategoryLevel;
-                    for (var j = 0; j < rc.return_data.length; j++) {
-                        GrievanceCategoryID = rc.return_data[j].GrievanceCategoryID;
-                        GrievanceCategory = rc.return_data[j].GrievanceCategory;
-                        CategoryLevel = rc.return_data[j].CategoryLevel;
-
-                        if (!groupedData[CategoryLevel]) {
-                            groupedData[CategoryLevel] = [];
-                        }
-                        groupedData[CategoryLevel].push({
-                            id: GrievanceCategoryID,
-                            value: GrievanceCategory,
-                            level: CategoryLevel
-                        });
-                    }
-
-                    // Build dropdowns
-                    var text = "";
-                    for (var key in groupedData) {
-                        if (groupedData.hasOwnProperty(key)) {
-                            text += '<div class="col-md-6">';
-                            text += ' <label for="server_name">Select Next Level Category:</label>'
-                            text += '<select class="form-control categorySelect"  id="cat-' + groupedData[key][0].level + '" data-level="' + groupedData[key][0].level + '">';
-                            text += '<option  value="-1"> Select Category</option>';
-                            if (key == 0) {
-                                for (var i = 0; i < groupedData[key].length; i++) {
-                                    text += '<option   id = "GrievanceCategoryID"  value="' + groupedData[key][i].id + '">' + groupedData[key][i].value +
-                                        '</option>';
-                                }
-                            }
-
-                            text += '</select>';
-                            text += '<br>';
-                            text += '</div>';
-                        }
-                    }
-
-                    // Append to the element with ID "subcategory"
-                    $("#subcategory").empty().append(text);
-                    $('.categorySelect').change(function () {
-                        nextCat = parseInt($(this).attr("data-level")) + 1;
-                        getNextLevelCategory('#cat-' + nextCat, this.value)
-                    });
-                    break;
-
-                case "getNextLevelCategory":
-                    loadSelect(nextSelectID, rc.return_data);
-                    break;
-
-
-                case "getCategoryList":
-                    loaddata(rc.return_data);
-                    break;
-
-                case "addGrievanceCategory":
-                    $("#modal-lg").modal("hide");
+                case "addNewBorrower":
                     notify("success", rc.return_data);
-                    $("#getdepartment-list").modal("hide");
-                    location.reload();
+                    getAllBorrower();
+                    $("#modal-addnewBorrower").modal("hide");
                     break;
 
-                case "getDepartment":
-                    loaddepartmentdata(rc.return_data);
+                case "getAllBorrower":
+                    //  console.log(rc.return_data);
+                    loaddata(rc.return_data);
+                    // notify("success",rc.return_data);
                     break;
 
-                case "addDepartment":
-                    notify('success', rc.return_data);
-                    location.reload();
-                    break;
 
-                case "onDepartmentDelete":
-                    notify('success', rc.return_data);
-                    $('#deldept' + deptid_var).remove();
-
-                    break;
-
-                case "onUserDelete":
-                    notify('success', rc.return_data);
-                    $('#delbtn' + staffid_var).remove();
-                    break;
-
-                // Declare selectedDepartmentID in a broader scope
-                case "getDepartmentForAssignGrievanceCategory":
-                    var selectedDepartmentID;
-                    loadSelect("#getdepartmentlist", rc.return_data);
-                    $('#getdepartmentlist').on('change', function () {
-                        selectedDepartmentID = $(this).val(); // Assign value to selectedDepartmentID
-                        getEmployeeByDepartmentID(selectedDepartmentID);
-                    });
-                    break;
-
-                case "getEmployeeByDepartmentID":
-                    var selectedStaffsID = null;
-                    // Here, you can use selectedDepartmentID
-                    loadSelect("#getstaffs", rc.return_data);
-                    $('#getstaffs').on('change', function () {
-                        selectedStaffsID = $(this).val();
-
-                    });
-                    break;
-
-                default:
-                    notify("error", rc.Page_key);
+               
             }
-        } else {
-            notify("error", rc.return_data);
         }
     }
 
 
-    var selectedLevel = "";
-    $('#CategoryLevels').on('change', function () {
-        selectedLevel = $("#CategoryLevels").val();
-        getZeroLevelCategory(selectedLevel);
 
-    });
-
-    $("#btn-addPayment").click(
-        function addPayment() {
+    $("#btn-addBorrower").click(
+        function () {
             debugger;
             let obj = {};
             obj.Module = "Loan";
-            obj.Page_key = "addNewPayment";
+            obj.Page_key = "addBorrower";
             let json = {};
-            json.referenceNumber = $("#referenceNumber").val();
-            json.payeeName = $("#payeeName").val();
+            json.BorrowerID = $("#BorrowerID").val();
+            json.BorrowerName = $("#BorrowerName").val();
+            json.LoanType = $("#LoanType").val();
+            json.Duration = $("#Duration").val();
             json.amount = $("#amount").val();
             obj.JSON = json;
             console.log(JSON.stringify(obj));
-            if (amount === '' || payeeName === '') {
+            if (  $("#BorrowerName").val() == '') {
 
                 // alert('All fields are compulsory. Please fill in all the areas.');
                 notify("error", "Please fill all fields.");
@@ -443,181 +341,9 @@
         }
     );
 
-
-    function clearform() {
-        $('#GrievanceCategory').val('');
-        $('#CategoryLevels').val('');
-        $('#UnderCategoryIds').val('');
-        $('#ResolutionLevel1').val('');
-        $('#ResolutionLevel2').val('');
-        $('#ResolutionLevel3').val('');
-    }
-
-
-    function getCategoryList() {
-        var obj = new Object();
-        obj.Module = "SupportTicket";
-        obj.Page_key = "getCategoryList";
-        var json = new Object();
-        obj.JSON = json;
-        TransportCall(obj);
-    }
-
-    function getZeroLevelCategory(selectedLevel) {
-
-        let obj = {};
-        obj.Module = "SupportTicket";
-        let json = {};
-        obj.Page_key = "getZeroLevelCategory";
-        json.CategoryLevels = selectedLevel; // Pass the selectedLevel value
-        obj.JSON = json;
-        TransportCall(obj);
-    }
-
-
-    function getDepartment() {
-        var obj = new Object();
-        obj.Module = "Settings";
-        obj.Page_key = "getDepartment";
-        var json = new Object();
-        obj.JSON = json;
-        TransportCall(obj);
-    }
-
-
-
-    function onLoadDepartment() //added by dev on 11/12/23
-    {
-        $("#showdepartment-list").modal("show");
-
-    }
-
-    $("#btnAddDept").click(function () {
-        let obj = {};
-        obj.Module = "Settings";
-        obj.Page_key = "addDepartment";
-        let data = {};
-        data.DeptCode = $("#deptCode").val();
-        data.DeptName = $("#deptName").val();
-        obj.JSON = data;
-        console.log(JSON.stringify(obj));
-        TransportCall(obj);
-    });
-
-    var deptid_var = 0;
-
-    function onDepartmentDelete(DepartmentID) //added by dev on 11/12/23
-    {
-        if (confirm("Are you sure you want to delete")) {
-            deptid_var = DepartmentID;
-            let obj = {};
-            obj.Module = "Settings";
-            let json = {};
-            obj.Page_key = "onDepartmentDelete";
-            json.DepartmentID = DepartmentID;
-            console.log(DepartmentID);
-            obj.JSON = json;
-            TransportCall(obj);
-        }
-    }
-
-
-    var staffid_var = 0;
-
-    function onUserDelete(StaffID) //added by dev on 11/12/23
-    {
-        if (confirm("Are you sure you want to delete")) {
-            staffid_var = StaffID;
-            let obj = {};
-            obj.Module = "Settings";
-            let json = {};
-            obj.Page_key = "onUserDelete";
-            json.StaffID = StaffID;
-            console.log(StaffID);
-            obj.JSON = json;
-            TransportCall(obj);
-        }
-    }
-
-
-    // function loaddata(data) {
-
-    //     var table = $("#table");
-
-    //     try {
-    //         if ($.fn.DataTable.isDataTable($(table))) {
-    //             $(table).DataTable().destroy();
-    //         }
-    //     } catch (ex) {}
-
-    //     var text = ""
-
-    //     if (data.length == 0) {
-    //         text += "No Data Found";
-    //     } else {
-
-    //         for (let i = 0; i < data.length; i++) {
-    //             text += '<tr> ';
-
-    //             // text += '<td> ' + (i+1) + '</td>';
-    //             text += '<th> ' + data[i].Main + '</th>';
-    //             text += '<th> ' + data[i].SubCategory + '</th>';
-    //             text += '<td> ' + data[i].ResolutionLevel1 + ' days</td>';
-    //             text += '<td>' + data[i].ResolutionLevel2 + ' days</td>';
-    //             text += '<td> ' + data[i].ResolutionLevel3 + ' days</td>';
-    //             text += '<td class="btn-group btn-group-sm">';
-    //             text += '   <a  onclick="onLoadDepartment(' + data[i].GrievanceCategoryID +
-    //                 ')"> <i class="fas fa-building"> </i> </a>';
-    //             text += '   <a  onclick="onAssign(' + data[i].GrievanceCategoryID +
-    //                 ')"> <button class="btn btn-primary btn-xs ml-3">Assign</button></a>';
-    //             text += '</td>';
-    //             text += '</tr >';
-    //         }
-    //     }
-
-    //     $("#table tbody").html("");
-    //     $("#table tbody").append(text);
-
-    //     $(table).DataTable({
-    //         responsive: true,
-    //         "order": [],
-    //         dom: 'Bfrtip',
-    //         "bInfo": true,
-    //         exportOptions: {
-    //             columns: ':not(.hidden-col)'
-    //         },
-    //         "deferRender": true,
-    //         "pageLength": 10,
-    //         buttons: [{
-    //                 exportOptions: {
-    //                     columns: ':not(.hidden-col)'
-    //                 },
-    //                 extend: 'excel',
-    //                 orientation: 'landscape',
-    //                 pageSize: 'A4'
-    //             },
-    //             {
-    //                 exportOptions: {
-    //                     columns: ':not(.hidden-col)'
-    //                 },
-    //                 extend: 'pdfHtml5',
-    //                 orientation: 'landscape',
-    //                 pageSize: 'A4'
-    //             },
-    //             {
-    //                 exportOptions: {
-    //                     columns: ':not(.hidden-col)'
-    //                 },
-    //                 extend: 'print',
-    //                 orientation: 'landscape',
-    //                 pageSize: 'A4'
-    //             }
-    //         ]
-    //     });
-    // }
-
     function loaddata(data) {
-        var table = $("#table");
+        debugger;
+        var table = $("#loadAllBorrowersTable");
 
         try {
             if ($.fn.DataTable.isDataTable($(table))) {
@@ -633,33 +359,33 @@
             for (let i = 0; i < data.length; i++) {
                 text += '<tr> ';
 
-                let mainCategoryWithArrows = '';
-                for (let j = 0; j < data[i].SubCategoryLevelID; j++) {
-                    mainCategoryWithArrows += '▶ ';
-                }
-                mainCategoryWithArrows += data[i].MainCategory;
-
-                text += '<th>' + mainCategoryWithArrows + '</th>';
-                if (data[i].SubCategory == null) {
-                    text += '<td> <span class=" badge badge-success">No Sub Category </span></td>';
+                // if (data[i].SubCategory == null) {
+                //     text += '<td> <span class=" badge badge-success">No Sub Category </span></td>';
+                // } else {
+                //     text += '<th> ' + data[i].SubCategory + '</th>';
+                // }
+                text += '<td> ' + data[i].BorrowerID + '</td>';
+                text += '<td>' + data[i].Name + '</td>';
+                text += '<td> ' + data[i].LoanType + '</td>';
+                text += '<td> ' + data[i].Duration + '</td>';
+                text += '<td> ' + data[i].Amount + '</td>';
+                if (data[i].RefNum == null) {
+                    text += '<td> <span class=" badge badge-danger">No  Data Found</span></td>';
                 } else {
-                    text += '<th> ' + data[i].SubCategory + '</th>';
+                    text += '<th> ' + data[i].RefNum + '</th>';
                 }
-                text += '<td> ' + data[i].ResolutionLevel1 + ' days</td>';
-                text += '<td>' + data[i].ResolutionLevel2 + ' days</td>';
-                text += '<td> ' + data[i].ResolutionLevel3 + ' days</td>';
-                text += '<td class="btn-group btn-group-sm">';
-                text += '   <a  onclick="onLoadDepartment(' + data[i].GrievanceCategoryID +
-                    ')"> <i class="fas fa-building"> </i> </a>';
-                text += '   <a  onclick="onAssign(' + data[i].GrievanceCategoryID +
-                    ')"> <button class="btn btn-primary btn-xs ml-3">Assign</button></a>';
-                text += '</td>';
+                // text += '<td class="btn-group btn-group-sm">';
+                // text += '   <a  onclick="onLoadDepartment(' + data[i].GrievanceCategoryID +
+                //     ')"> <i class="fas fa-building"> </i> </a>';
+                // text += '   <a  onclick="onAssign(' + data[i].GrievanceCategoryID +
+                //     ')"> <button class="btn btn-primary btn-xs ml-3">Assign</button></a>';
+                // text += '</td>';
                 text += '</tr >';
             }
         }
 
-        $("#table tbody").html("");
-        $("#table tbody").append(text);
+        $("#loadAllBorrowersTable tbody").html("");
+        $("#loadAllBorrowersTable tbody").append(text);
 
         $(table).DataTable({
             responsive: true,
@@ -700,123 +426,9 @@
     }
 
 
-    var ActiveGrievanceCategoryID = null;
-
-    function onAssign(GrievanceCategoryID) {
-        // alert(GrievanceCategoryID);
-        ActiveGrievanceCategoryID = GrievanceCategoryID;
-        $("#getdepartment-list").modal("show");
-
-    }
-
-    function AssignGrievanceCategory() {
-        let obj = {};
-        obj.Module = "SupportTicket";
-        obj.Page_key = "addGrievanceCategory";
-        let json = {};
-        json.DepartmentID = $("#getdepartmentlist").val();
-        staffID = $('#getstaffs').val();
-        json.StaffIDs = staffID;
-        json.GrievanceCategoryID = ActiveGrievanceCategoryID;
-        obj.JSON = json;
-        console.log(obj);
-        TransportCall(obj);
-
-    }
 
 
-    function getDepartmentForAssignGrievanceCategory() {
-        let obj = {};
-        obj.Module = "Settings";
-        let json = {};
-        obj.Page_key = "getDepartmentForAssignGrievanceCategory";
-        obj.JSON = json;
-        TransportCall(obj);
 
-    }
-
-    function getEmployeeByDepartmentID(selectedDepartmentID) {
-        console.log(selectedDepartmentID);
-        let obj = {}
-        obj.Module = "Settings";
-        let json = {};
-        obj.Page_key = "getEmployeeByDepartmentID";
-        obj.JSON = json;
-        json.DepartmentID = selectedDepartmentID;
-        TransportCall(obj);
-
-    }
-
-
-    function loaddepartmentdata(data) {
-        var table = $("#departmenttable");
-
-        try {
-            if ($.fn.DataTable.isDataTable($(table))) {
-                $(table).DataTable().destroy();
-            }
-        } catch (ex) { }
-
-        var text = ""
-        for (let i = 0; i < data.length; i++) {
-            let staffIDParts = data[i].StaffID.split(',');
-            let staffNameParts = data[i].StaffName.split(',');
-            text += '<tr>';
-            text += '<th><button class="btn btn-danger btn-sm " onclick="onDepartmentDelete(' + data[i].DepartmentID +
-                ')"><i class="fa fa-trash"> </i></button> &nbsp;&nbsp;' + data[i].DepartmentName + '</th>';
-            text += '<td>';
-
-            // Loop through each part of the Staff ID
-            for (let j = 0; j < staffIDParts.length; j++) {
-                text += ' <span class="badge badge-info" id="delbtn' + staffIDParts[j] + '" >' + staffNameParts[j];
-                text += '&nbsp;&nbsp;<span style="color:black; cursor:pointer;" onclick="onUserDelete(' + staffIDParts[j] +
-                    ')">&times;</span> </span>';
-            }
-            text += '</td>';
-            text += '</tr>';
-        }
-
-
-        $("#departmenttable tbody").html("");
-        $("#departmenttable tbody").append(text);
-
-        $(table).DataTable({
-            responsive: true,
-            "order": [],
-            dom: 'Bfrtip',
-            "bInfo": true,
-            exportOptions: {
-                columns: ':not(.hidden-col)'
-            },
-            "deferRender": true,
-            "pageLength": 10,
-            buttons: [{
-                exportOptions: {
-                    columns: ':not(.hidden-col)'
-                },
-                extend: 'excel',
-                orientation: 'landscape',
-                pageSize: 'A4'
-            },
-            {
-                exportOptions: {
-                    columns: ':not(.hidden-col)'
-                },
-                extend: 'pdfHtml5',
-                orientation: 'landscape',
-                pageSize: 'A4'
-            },
-            {
-                exportOptions: {
-                    columns: ':not(.hidden-col)'
-                },
-                extend: 'print',
-                orientation: 'landscape',
-                pageSize: 'A4'
-            }
-            ]
-        });
-    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>

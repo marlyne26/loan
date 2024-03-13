@@ -1,26 +1,32 @@
 <?php
 
 namespace app\modules\loan_mgmt;
+
 use app\modules\loan_mgmt\classes\Loan;
 use app\core\Controller;
 use app\database\DBController;
 
-class LoanController implements Controller{
+class LoanController implements Controller
+{
+
 
     public function Route($data)
     {
-
         $jsondata = $data["JSON"];
 
         switch ($data["Page_key"]) {
-          
+
             case 'addNewPayment':
+                return(new Loan())->addNewPayment($jsondata);
 
-                return (new Loan())->addNewPayment($jsondata);
+            case 'getAllPayment':
+                return(new Loan())->getAllPayment($jsondata);
 
-            // case "getDataFromAPI":
-            //      return (new Support())->getDataFromAPI($jsondata);
+            case 'addBorrower':
+                return(new Loan())->addBorrower($jsondata);
 
+            case 'getAllBorrower':
+                return(new Loan())->getAllBorrower($jsondata);
 
             default:
                 header('HTTP/1.1 401  Unauthorized Access');
@@ -28,12 +34,42 @@ class LoanController implements Controller{
                 session_destroy();
                 return array("return_code" => false, "return_data" => array("Page Key not found"));
         }
-
     }
+
+
+
+
+    // public function Route($data)
+    // {
+
+    //     $jsondata = $data["JSON"];
+
+    //     switch ($data["Page_key"]) {
+
+    //         case 'addNewPayment':
+    //             return(new Loan())->addNewPayment($jsondata);
+
+    //             case 'getAllPayment':
+    //                 return(new Loan())->getAllPayment($jsondata);
+
+
+
+    //         // case 'getAllPayments':
+    //         //     return(new Loan())->getAllPayments($jsondata);
+
+
+    //         default:
+    //             header('HTTP/1.1 401  Unauthorized Access');
+    //             header("Status: 401 ");
+    //             session_destroy();
+    //             return array("return_code" => false, "return_data" => array("Page Key not found"));
+    //     }
+
+    // }
 
     static function Views($page)
     {
-        
+
         $viewpath = "../app/modules/loan_mgmt/views/";
 
         switch ($page[1]) {
@@ -41,36 +77,32 @@ class LoanController implements Controller{
             case "Home":
                 load($viewpath . "Home.php");
                 break;
-            
+
             case "loanRequest":
                 load($viewpath . "loanRequest.php");
                 break;
-            
+
             case "bankStatement":
                 load($viewpath . "bankStatement.php");
-                break;    
+                break;
 
             case "payments":
-                    load($viewpath . "payments.php");
-                    break;    
+                load($viewpath . "payments.php");
+                break;
 
             case "types":
-                    load($viewpath . "loanTypes.php");
-                    break;  
-                    
+                load($viewpath . "loanTypes.php");
+                break;
+
             case "checkLoanRequest":
                 load($viewpath . "checkLoanRequest.php");
-                break; 
+                break;
 
-            case "bankStatement":
-                load($viewpath . "bankStatement.php");
-                break; 
-
-            case "manageBorrowers":
+            case "manageborrowers":
                 load($viewpath . "manageBorrowers.php");
-                break; 
-            
-            
+                break;
+
+
             // case 'viewLoan':
             //     load($viewpath . "viewLoan/viewLoan.php");
             //     DBController::logs("Hellop");

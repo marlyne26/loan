@@ -127,12 +127,9 @@ CREATE TABLE Loan_Type (
 CREATE TABLE Borrower (
     `ID` varchar(20) NOT NULL,
     `Name` varchar(20) NOT NULL,
-    `Address` int(20) NOT NULL,
-    `ContactNo` int(20),
-    `EmailID` int(20),
-    `isActive` int(20) NOT NULL,
-    `CreatedDateAndTime` int(20),
-    `CreatedByID` int(20)
+    `LoanType` varchar(20) NOT NULL,
+    `Duration` int(20),
+    `Amount` int(20)
   );
 
 

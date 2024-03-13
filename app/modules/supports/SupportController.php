@@ -15,6 +15,8 @@ class SupportController implements Controller
             case 'sendotp':
                 return (new Support())->sentotp($jsondata);
 
+                
+
             // case "getDataFromAPI":
             //      return (new Support())->getDataFromAPI($jsondata);
 
