@@ -84,7 +84,7 @@ class Loan
    function getAllBorrower($data)
    {
 
-      $query = "SELECT * FROM `Borrower`";
+      $query = "SELECT * FROM `borrower`";
       $res = DBController::getDataSet($query);
       if ($res) {
          return array("return_code" => true, "return_data" => $res);

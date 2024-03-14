@@ -25,10 +25,10 @@
                                 BORROWER LIST
                             </div>
                             <span class="float-right">
-                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-lg"> <i
+                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-addnewBorrower"> <i
                                         class="fa fa-circle-thin"> <i class="fa fa-plus"></i></i>New Borrower</button>
                             </span>
-                            <div class="modal fade" id="modal-lg">
+                            <div class="modal fade" id="modal-addnewBorrower">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
@@ -60,9 +60,6 @@
                                                     </div>
 
 
-                                                    <div class="row" id="subcategory">
-
-                                                    </div>
 
                                                     <div class="row">
                                                         <div class="col-md-6">
@@ -118,7 +115,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="table" class="table table-bordered table-striped">
+                            <table id="loadAllBorrowersTable" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">ID </th>
@@ -164,17 +161,19 @@
         obj.Page_key = "getAllBorrower";
         var json = new Object();
         obj.JSON = json;
-        // TransportCall(obj);
+        TransportCall(obj);
     }
     function onSuccess(rc) {
         if (rc.return_code) {
             switch (rc.Page_key) {
 
-                case "addNewBorrower":
+                case "addBorrower":
+                    debugger;
                     notify("success", rc.return_data);
                     getAllBorrower();
                     $("#modal-addnewBorrower").modal("hide");
                     break;
+                    
 
                 case "getAllBorrower":
                     //  console.log(rc.return_data);
@@ -192,7 +191,6 @@
 
     $("#btn-addBorrower").click(
         function () {
-            debugger;
             let obj = {};
             obj.Module = "Loan";
             obj.Page_key = "addBorrower";
@@ -243,11 +241,6 @@
                 text += '<td> ' + data[i].LoanType + '</td>';
                 text += '<td> ' + data[i].Duration + '</td>';
                 text += '<td> ' + data[i].Amount + '</td>';
-                if (data[i].RefNum == null) {
-                    text += '<td> <span class=" badge badge-danger">No  Data Found</span></td>';
-                } else {
-                    text += '<th> ' + data[i].RefNum + '</th>';
-                }
                 // text += '<td class="btn-group btn-group-sm">';
                 // text += '   <a  onclick="onLoadDepartment(' + data[i].GrievanceCategoryID +
                 //     ')"> <i class="fas fa-building"> </i> </a>';

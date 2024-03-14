@@ -1,38 +1,79 @@
 
 
-13-03-24 04:24:57 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"Marlyne Ibadahun Binan Songthiang","LoanType":"Land Loan","Duration":"2","amount":"300000"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+14-03-24 02:02:08 : {"JSON":"","Page_key":""}
 
-13-03-24 04:24:57 : Unknown error type: [2] Undefined array key &quot;BorrowerID&quot;<br />
-  Fatal error on line 71 in file C:\wamp64\www\loan\app\modules\loan_mgmt\classes\Loan.php
-Aborting...<br />
+14-03-24 02:02:08 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
+14-03-24 02:02:20 : {"Module":"Loan","Page_key":"addNewPayment","JSON":{"referenceNumber":null,"payeeName":"jj","amount":"656565"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:26:07 : {"JSON":"","Page_key":""}
+14-03-24 02:02:20 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:26:17 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"dfgvfd","LoanType":"Housing Loan","Duration":"3","amount":"24345435"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+14-03-24 02:02:35 : {"JSON":"","Page_key":""}
 
-13-03-24 04:28:19 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"dfgvfd","LoanType":"Housing Loan","Duration":"3","amount":"24345435"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+14-03-24 02:02:47 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"dd","LoanType":"Car Loan","Duration":"12","amount":"232323"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:28:38 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"dfgvfd","LoanType":"Housing Loan","Duration":"3","amount":"24345435"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+14-03-24 02:06:00 : {"JSON":"","Page_key":""}
 
-13-03-24 04:45:56 : {"JSON":"","Page_key":""}
+14-03-24 02:06:01 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:46:10 : {"JSON":"","Page_key":""}
+14-03-24 02:06:17 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"gj","LoanType":"Housing Loan","Duration":"12","amount":"23223232"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:46:26 : {"JSON":"","Page_key":""}
+14-03-24 02:10:52 : {"JSON":"","Page_key":""}
 
-13-03-24 04:46:48 : {"JSON":"","Page_key":""}
+14-03-24 02:10:52 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:47:49 : {"JSON":"","Page_key":""}
+14-03-24 02:10:55 : {"JSON":"","Page_key":""}
 
-13-03-24 04:48:56 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"abc","LoanType":"Education Loan","Duration":"36","amount":"500000"},"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+14-03-24 02:10:55 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:59:47 : {"JSON":"","Page_key":""}
+14-03-24 02:11:07 : {"Module":"Loan","Page_key":"addNewPayment","JSON":{"referenceNumber":null,"payeeName":"bd","amount":"12000"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:59:54 : {"JSON":"","Page_key":""}
+14-03-24 02:11:07 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 04:59:59 : {"JSON":"","Page_key":""}
+14-03-24 02:11:24 : {"JSON":"","Page_key":""}
 
-13-03-24 04:59:59 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"c51ce410c124a10e0db5e4b97fc2af39"}
+14-03-24 02:11:25 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
 
-13-03-24 05:03:31 : {"JSON":"","Page_key":""}
+14-03-24 02:11:26 : {"JSON":"","Page_key":""}
+
+14-03-24 02:11:26 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:13:48 : {"JSON":"","Page_key":""}
+
+14-03-24 02:13:49 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:14:06 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"jo","LoanType":"Car Loan","Duration":"12","amount":"99999"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:21:31 : {"JSON":"","Page_key":""}
+
+14-03-24 02:21:32 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:25:19 : {"JSON":"","Page_key":""}
+
+14-03-24 02:25:20 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:25:22 : {"JSON":"","Page_key":""}
+
+14-03-24 02:25:23 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:25:50 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"Baheh","LoanType":"Car Loan","Duration":"12","amount":"1200000"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:30:53 : {"JSON":"","Page_key":""}
+
+14-03-24 02:30:54 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:31:12 : {"Module":"Loan","Page_key":"addBorrower","JSON":{"BorrowerName":"Bahdeng","LoanType":"Personal Loan","Duration":"12","amount":"300000"},"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:31:12 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:31:53 : {"JSON":"","Page_key":""}
+
+14-03-24 02:33:37 : {"JSON":"","Page_key":""}
+
+14-03-24 02:33:37 : {"Module":"Loan","Page_key":"getAllBorrower","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:34:11 : {"JSON":"","Page_key":""}
+
+14-03-24 02:34:11 : {"Module":"Loan","Page_key":"getAllPayment","JSON":[],"MSC":"aab3238922bcc25a6f606eb525ffdc56"}
+
+14-03-24 02:34:34 : {"JSON":"","Page_key":""}
