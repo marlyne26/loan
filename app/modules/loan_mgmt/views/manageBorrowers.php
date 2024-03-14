@@ -167,7 +167,7 @@
         if (rc.return_code) {
             switch (rc.Page_key) {
 
-                case "addBorrower":
+                case "addNewBorrower":
                     debugger;
                     notify("success", rc.return_data);
                     getAllBorrower();
@@ -191,6 +191,7 @@
 
     $("#btn-addBorrower").click(
         function () {
+
             let obj = {};
             obj.Module = "Loan";
             obj.Page_key = "addBorrower";

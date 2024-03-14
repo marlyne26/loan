@@ -90,6 +90,17 @@ class Loan
          return array("return_code" => true, "return_data" => $res);
       }
       return array("return_code" => false, "return_data" => "Error");
+   }
+
+   function getAllLoanRequest($data)
+   {
+
+      $query = "SELECT * FROM `loan_request`";
+      $res = DBController::getDataSet($query);
+      if ($res) {
+         return array("return_code" => true, "return_data" => $res);
+      }
+      return array("return_code" => false, "return_data" => "Error");
 
 
    }

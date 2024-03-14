@@ -1,20 +1,24 @@
 <style>
+  .modal-button {
+    background-color: #007bff;
+    /* Blue */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 
-.modal-button {
-  background-color: #007bff; /* Blue */
-  border: none;
-  color: white;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.modal-button:hover {
-  background-color: #0056b3; /* Darker blue */
-}  /* Styling for the overlay */
+  .modal-button:hover {
+    background-color: #0056b3;
+    /* Darker blue */
+  }
+
+  /* Styling for the overlay */
   .overlay {
     display: none;
     position: fixed;
@@ -124,104 +128,102 @@
             <div class="card-header">
               <h3 class="card-title">Loan Requests</h3>
             </div>
+            
+            <div class="modal fade" id="modal-addnewBorrower">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Borrower Details</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-3">
 
-            <div class="card-body">
-              <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6"></div>
-                  <div class="col-sm-12 col-md-6"></div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
-                      <thead>
-                        <tr>
-                          <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Loan Name</th>
-                          <th class="sorting" tabindex="0" aria-controls="example2" colspan="1" aria-label="Browser: activate to sort column ascending">Duration(Years)</th>
-                          <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Branch</th>
-                          <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Interest(%)</th>
-                          <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Limitation Period</th>
-                          <!-- New column with the "Check" button -->
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="odd">
-                          <td class="dtr-control sorting_1" tabindex="0">Housing</td>
-                          <td>3</td>
-                          <td>Shillong</td>
-                          <td>1.7</td>
-                          <td>20</td>
-                          <!-- New button in the "Action" column -->
-                          <td>
-                          <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
-                        </tr>
-                        <tr class="even">
-                          <td class="dtr-control sorting_1" tabindex="0">Education</td>
-                          <td>4</td>
-                          <td>Shillong</td>
-                          <td>1.8</td>
-                          <td>20</td>
-                          <!-- New button in the "Action" column -->
-                          <td> 
-                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
-                          </td>
-                        </tr>
-                        <tr class="odd">
-                          <td class="dtr-control sorting_1" tabindex="0">Land</td>
-                          <td>5</td>
-                          <td>Shillong</td>
-                          <td>1.8</td>
-                          <td>20</td>
-                          <!-- New button in the "Action" column -->
-                          <td>
-                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
-                          </td>
-                        </tr>
-                        <!-- Add more records as needed -->
-                        <tr class="even">
-                          <td class="dtr-control sorting_1" tabindex="0">Car</td>
-                          <td>3</td>
-                          <td>Shillong</td>
-                          <td>1.9</td>
-                          <td>20</td>
-                          <!-- New button in the "Action" column -->
-                          <td>
-                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
-                          </td>
-                        </tr>
-                        <tr class="odd">
-                          <td class="sorting_1 dtr-control">Personal</td>
-                          <td>2</td>
-                          <td>Shillong</td>
-                          <td>1.8</td>
-                          <td>20</td>
-                          <!-- New button in the "Action" column -->
-                          <td>
-                            <button class="modal-button" data-toggle="modal" data-target="#modal-lg" onclick="openModal(this)">Check</button>                          </td>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                          </div>
 
-                <div class="row">
-                  <div class="col-sm-12 col-md-5">
-                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-7">
-                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
-                      <ul class="pagination">
-                        <li class="paginate_button page-item previous disabled" id="example2_previous"><a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
-                        <li class="paginate_button page-item active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
-                        <!-- Add more pagination buttons as needed -->
-                        <li class="paginate_button page-item next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
-                      </ul>
+                          <!-- inputField -->
+                          <div class="col-md-10">
+
+                            <div class="form-group">
+                              <label for="BorrowerName">Name</label>
+                              <input type="text" id="BorrowerName" class="form-control" placeholder="Borrower Name"
+                                autocomplete="off" required>
+                            </div>
+
+                          </div>
+                        </div>
+
+
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="LoanType">Loan Type</label>
+                              <select id="LoanType" class="form-control" autocomplete="off" required>
+                                <option value="SelectLoanType">Select Loan Type</option>
+                                <option value="Housing Loan">Housing Loan</option>
+                                <option value="Education Loan">Education Loan</option>
+                                <option value="Land Loan">Land Loan</option>
+                                <option value="Car Loan">Car Loan</option>
+                                <option value="Personal Loan">Personal Loan</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="Duration">Duration(Months)</label>
+                              <input type="number" id="Duration" class="form-control" autocomplete="off" required>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="amount">Amount</label>
+                              <input type="number" id="amount" class="form-control" autocomplete="off" required>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" id="btn-addBorrower">Save</button>
                     </div>
                   </div>
                 </div>
+
+                <!-- /.modal-content -->
               </div>
+              <!-- /.modal-dialog -->
+            </div>
+
+            <div class="card-body">
+              <table id="loadAllLoanRequestTable" class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Loan Type</th>
+                    <th scope="col">Borrower ID</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Interest</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -242,34 +244,140 @@
     </div>
   </div>
 </div>
-
 <script>
-  function openModal(button) {
-  // Show the overlay and modal
-  document.getElementById('overlay').style.display = 'flex';
-  document.getElementById('modal').style.display = 'block';
+  $(function () {
+    getAllLoanRequest();
+  });
 
-  // Get the corresponding row of the clicked button
-  var row = button.closest('tr');
-
-  // Create a table to display column names and row content
-  var content = '';
-  for (var i = 0; i < row.cells.length - 1; i++) { // Exclude the last cell with the button
-    content += '<div class="column-names">' + row.closest('table').rows[0].cells[i].textContent + ':</div>';
-    content += '<div>' + row.cells[i].textContent + '</div>';
+  function getAllLoanRequest() {
+    debugger;
+    var obj = new Object();
+    obj.Module = "Loan";
+    obj.Page_key = "getAllLoanRequest";
+    var json = new Object();
+    obj.JSON = json;
+    TransportCall(obj);
   }
 
-  // Display the content in the modal
-  document.getElementById('modal-content').innerHTML = content;
+  function onSuccess(rc) {
+    if (rc.return_code) {
+      switch (rc.Page_key) {
 
-  // Add event listener to the close button
-  var closeButton = document.querySelector('.close-btn');
-  closeButton.addEventListener('click', closeModal);
-}
-
-  function closeModal() {
-    // Hide the overlay and modal
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('modal').style.display = 'none';
+        case "getAllLoanRequest":
+          //  console.log(rc.return_data);
+          loaddata(rc.return_data);
+          // notify("success",rc.return_data);
+          break;
+      }
+    }
   }
+
+  function loaddata(data) {
+    debugger;
+    var table = $("#loadAllLoanRequestTable");
+
+    try {
+      if ($.fn.DataTable.isDataTable($(table))) {
+        $(table).DataTable().destroy();
+      }
+    } catch (ex) { }
+
+    var text = "";
+
+    if (data.length == 0) {
+      text += "No Data Found";
+    } else {
+      for (let i = 0; i < data.length; i++) {
+        text += '<tr> ';
+
+        // if (data[i].SubCategory == null) {
+        //     text += '<td> <span class=" badge badge-success">No Sub Category </span></td>';
+        // } else {
+        //     text += '<th> ' + data[i].SubCategory + '</th>';
+        // }
+        text += '<td> ' + data[i].LoanTypeID + '</td>';
+        text += '<td>' + data[i].BorrowerID + '</td>';
+        text += '<td> ' + data[i].Durations + '</td>';
+        text += '<td> ' + data[i].Interest + '</td>';
+        text += '<td> ' + data[i].Status + '</td>';
+        text += '<td> ' + data[i].Amount + '</td>';
+        text += '<td> <button class="buttonCheck" data-toggle="modal" data-target="#modal-addnewBorrower">Check</button></td>';
+        // text += '<td class="btn-group btn-group-sm">';
+        // text += '   <a  onclick="onLoadDepartment(' + data[i].GrievanceCategoryID +
+        //     ')"> <i class="fas fa-building"> </i> </a>';
+        // text += '   <a  onclick="onAssign(' + data[i].GrievanceCategoryID +
+        //     ')"> <button class="btn btn-primary btn-xs ml-3">Assign</button></a>';
+        // text += '</td>';
+        text += '</tr >';
+      }
+    }
+
+    $("#loadAllLoanRequestTable tbody").html("");
+    $("#loadAllLoanRequestTable tbody").append(text);
+
+    $(table).DataTable({
+      responsive: true,
+      "order": [],
+      dom: 'Bfrtip',
+      "bInfo": true,
+      exportOptions: {
+        columns: ':not(.hidden-col)'
+      },
+      "deferRender": true,
+      "pageLength": 10,
+      buttons: [{
+        exportOptions: {
+          columns: ':not(.hidden-col)'
+        },
+        extend: 'excel',
+        orientation: 'landscape',
+        pageSize: 'A4'
+      },
+      {
+        exportOptions: {
+          columns: ':not(.hidden-col)'
+        },
+        extend: 'pdfHtml5',
+        orientation: 'landscape',
+        pageSize: 'A4'
+      },
+      {
+        exportOptions: {
+          columns: ':not(.hidden-col)'
+        },
+        extend: 'print',
+        orientation: 'landscape',
+        pageSize: 'A4'
+      }
+      ]
+    });
+  }
+  //   function openModal(button) {
+  //   // Show the overlay and modal
+  //   document.getElementById('overlay').style.display = 'flex';
+  //   document.getElementById('modal').style.display = 'block';
+
+  //   // Get the corresponding row of the clicked button
+  //   var row = button.closest('tr');
+
+  //   // Create a table to display column names and row content
+  //   var content = '';
+  //   for (var i = 0; i < row.cells.length - 1; i++) { // Exclude the last cell with the button
+  //     content += '<div class="column-names">' + row.closest('table').rows[0].cells[i].textContent + ':</div>';
+  //     content += '<div>' + row.cells[i].textContent + '</div>';
+  //   }
+
+  //   // Display the content in the modal
+  //   document.getElementById('modal-content').innerHTML = content;
+
+  //   // Add event listener to the close button
+  //   var closeButton = document.querySelector('.close-btn');
+  //   closeButton.addEventListener('click', closeModal);
+  // }
+
+  //   function closeModal() {
+  //     // Hide the overlay and modal
+  //     document.getElementById('overlay').style.display = 'none';
+  //     document.getElementById('modal').style.display = 'none';
+  //   }
 </script>

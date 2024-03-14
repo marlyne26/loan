@@ -28,6 +28,10 @@ class LoanController implements Controller
             case 'getAllBorrower':
                 return(new Loan())->getAllBorrower($jsondata);
 
+            case 'getAllLoanRequest':
+                return(new Loan())->getAllLoanRequest($jsondata);
+
+
             default:
                 header('HTTP/1.1 401  Unauthorized Access');
                 header("Status: 401 ");
