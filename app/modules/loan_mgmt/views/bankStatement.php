@@ -28,17 +28,17 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Bank</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Bank Name" fdprocessedid="wuoysi">
+                <input type="email" class="form-control" id="BankName" placeholder="Enter Bank Name" fdprocessedid="wuoysi">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Branch</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Branch Location" fdprocessedid="1mtnxf">
+                <input type="password" class="form-control" id="BranchName" placeholder="Enter Branch Location" fdprocessedid="1mtnxf">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Date</label>
-                <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Password" fdprocessedid="1mtnxf">
+                <input type="date" class="form-control" id="Date" placeholder="Password" fdprocessedid="1mtnxf">
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="exampleInputFile">File input</label>
                 <div class="input-group">
                   <div class="custom-file">
@@ -49,11 +49,7 @@
                     <span class="input-group-text">Upload</span>
                   </div>
                 </div>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
+              </div> -->
             </div>
             <div class="card-footer">
               <button type="submit" class="btn btn-primary" fdprocessedid="lt72qw">Submit</button>
@@ -66,4 +62,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+ 

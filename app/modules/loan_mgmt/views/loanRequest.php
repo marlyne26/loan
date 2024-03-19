@@ -295,12 +295,12 @@
         // } else {
         //     text += '<th> ' + data[i].SubCategory + '</th>';
         // }
-        text += '<td> ' + data[i].LoanTypeID + '</td>';
+        text += '<td>' + data[i].LoanTypeID + '</td>';
         text += '<td>' + data[i].BorrowerID + '</td>';
-        text += '<td> ' + data[i].Durations + '</td>';
-        text += '<td> ' + data[i].Interest + '</td>';
-        text += '<td> ' + data[i].Status + '</td>';
-        text += '<td> ' + data[i].Amount + '</td>';
+        text += '<td>' + data[i].Durations + '</td>';
+        text += '<td>' + data[i].Interest + '</td>';
+        text += '<td>' + data[i].Status + '</td>';
+        text += '<td>' + data[i].Amount + '</td>';
         text += '<td> <button class="buttonCheck" data-toggle="modal" data-target="#modal-addnewBorrower">Check</button></td>';
         // text += '<td class="btn-group btn-group-sm">';
         // text += '   <a  onclick="onLoadDepartment(' + data[i].GrievanceCategoryID +
