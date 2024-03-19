@@ -117,7 +117,7 @@
         <div class="col-sm-6">
         </div>
       </div>
-    </div>
+    </div>  
   </div>
   <section class="content">
     <div class="container-fluid">

@@ -25,8 +25,8 @@
                                 BORROWER LIST
                             </div>
                             <span class="float-right">
-                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-addnewBorrower"> <i
-                                        class="fa fa-circle-thin"> <i class="fa fa-plus"></i></i>New Borrower</button>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#modal-addnewBorrower">
+                                    <i class="fa fa-circle-thin"> <i class="fa fa-plus"></i></i>New Borrower</button>
                             </span>
                             <div class="modal fade" id="modal-addnewBorrower">
                                 <div class="modal-dialog modal-lg">
@@ -67,9 +67,11 @@
                                                                 <label for="LoanType">Loan Type</label>
                                                                 <select id="LoanType" class="form-control"
                                                                     autocomplete="off" required>
-                                                                    <option value="SelectLoanType">Select Loan Type</option>
+                                                                    <option value="SelectLoanType">Select Loan Type
+                                                                    </option>
                                                                     <option value="Housing Loan">Housing Loan</option>
-                                                                    <option value="Education Loan">Education Loan</option>
+                                                                    <option value="Education Loan">Education Loan
+                                                                    </option>
                                                                     <option value="Land Loan">Land Loan</option>
                                                                     <option value="Car Loan">Car Loan</option>
                                                                     <option value="Personal Loan">Personal Loan</option>
@@ -81,9 +83,10 @@
 
                                                     <div class="row">
                                                         <div class="col-md-4">
-                                                        <div class="form-group">
+                                                            <div class="form-group">
                                                                 <label for="Duration">Duration(Months)</label>
-                                                                <input type="number" id="Duration" class="form-control" autocomplete="off" required>
+                                                                <input type="number" id="Duration" class="form-control"
+                                                                    autocomplete="off" required>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -133,11 +136,11 @@
                         <!-- /.card-body -->
 
 
-                       
 
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
+
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
 </div>
@@ -164,16 +167,16 @@
         TransportCall(obj);
     }
     function onSuccess(rc) {
+        debugger;
         if (rc.return_code) {
             switch (rc.Page_key) {
 
-                case "addNewBorrower":
+                case "addBorrower":
                     debugger;
                     notify("success", rc.return_data);
                     getAllBorrower();
                     $("#modal-addnewBorrower").modal("hide");
                     break;
-                    
 
                 case "getAllBorrower":
                     //  console.log(rc.return_data);
@@ -181,6 +184,8 @@
                     // notify("success",rc.return_data);
                     break;
 
+                default:
+                notify("error", rc.Page_key)
 
 
             }
