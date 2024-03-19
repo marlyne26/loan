@@ -48,15 +48,25 @@ class Loan
       return array("return_code" => false, "return_data" => "Error payment");
    }
 
-   $query = "INSERT INTO `BankStatement`(`BankName`, `Branch`,`Date`) VALUES (:BankName,:BranchName,:Date);";
-      //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
-      $res = DBController::ExecuteSQL($query, $params);
-      if ($res) {
-         return array("return_code" => true, "return_data" => "Upload successful");
-      }
-      return array("return_code" => false, "return_data" => "Error Uploading");
+   function BankStatement($data)
+   {
+      //prepare array 
+      $params = array(
+         array(":BankName", $data["BankName"]),
+         array(":BranchName", $data["BranchName"]),
+         array(":Date", $data['Date']),
+      );
 
 
+      $query = "INSERT INTO `BankStatement`(`BankName`, `Branch`,`Date`) VALUES (:BankName,:BranchName,:Date);";
+         //$query="INSERT INTO `Setting_State`( `StateName`) VALUES (:StateName); ";
+         $res = DBController::ExecuteSQL($query, $params);
+         if ($res) {
+            return array("return_code" => true, "return_data" => "Upload successful");
+         }
+            return array("return_code" => false, "return_data" => "Error Uploading");
+
+   }
 
 
    function getAllPayment($data)

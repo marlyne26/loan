@@ -76,7 +76,7 @@
 
 
                                             <div class="row" id="subcategory">
-
+ 
                                             </div>
 
                                             <div class="row">
@@ -340,9 +340,9 @@
                 // } else {
                 //     text += '<th> ' + data[i].SubCategory + '</th>';
                 // }
-                text += '<td> ' + data[i].PaymentID + '</td>';
+                text += '<td>' + data[i].PaymentID + '</td>';
                 text += '<td>' + data[i].Payee + '</td>';
-                text += '<td> ' + data[i].Amount + '</td>';
+                text += '<td>' + data[i].Amount + '</td>';
                 if (data[i].RefNum == null) {
                     text += '<td> <span class=" badge badge-danger">No  Data Found</span></td>';
                 } else {

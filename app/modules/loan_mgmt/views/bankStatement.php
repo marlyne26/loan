@@ -28,11 +28,11 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Bank</label>
-                <input type="email" class="form-control" id="BankName" placeholder="Enter Bank Name" fdprocessedid="wuoysi">
+                <input type="text" class="form-control" id="BankName" placeholder="Enter Bank Name" fdprocessedid="wuoysi">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Branch</label>
-                <input type="password" class="form-control" id="BranchName" placeholder="Enter Branch Location" fdprocessedid="1mtnxf">
+                <input type="text" class="form-control" id="BranchName" placeholder="Enter Branch Location" fdprocessedid="1mtnxf">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Date</label>
@@ -62,4 +62,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
+  

@@ -17,19 +17,22 @@ class LoanController implements Controller
         switch ($data["Page_key"]) {
 
             case 'addNewPayment':
-                return(new Loan())->addNewPayment($jsondata);
+                return (new Loan())->addNewPayment($jsondata);
 
             case 'getAllPayment':
-                return(new Loan())->getAllPayment($jsondata);
+                return (new Loan())->getAllPayment($jsondata);
 
             case 'addBorrower':
-                return(new Loan())->addBorrower($jsondata);
+                return (new Loan())->addBorrower($jsondata);
 
             case 'getAllBorrower':
-                return(new Loan())->getAllBorrower($jsondata);
+                return (new Loan())->getAllBorrower($jsondata);
 
             case 'getAllLoanRequest':
-                return(new Loan())->getAllLoanRequest($jsondata);
+                return (new Loan())->getAllLoanRequest($jsondata);
+
+            case 'BankStatement':
+                return (new Loan())->BankStatement($jsondata);
 
 
             default:
