@@ -79,7 +79,7 @@
       bankName: bankName,
       branchName: branchName,
       date: date
-    };
+     };
 
     // Send the form data to the server using AJAX
     $.ajax({
